@@ -1,0 +1,79 @@
+{
+  "@context": "https://etc.web.ox.ac.uk/api/v1/person.json",
+  "id": "https://etc.web.ox.ac.uk/suppa/people/45128",
+  "type": "suppa:Person",
+  "derivedFrom": "https://rism.online/people/45128",
+  "created": "2026-03-11T09:00:00Z",
+  "updated": "2026-07-20T14:32:00Z",
+  "etcIdentifier": "ETC-P-0001",
+  "activityByPlace": {
+    "items": [
+      {
+        "place": "https://rism.online/places/50010334",
+        "activities": [
+          "Born and raised here; earliest musical influences from his father's music shop"
+        ]
+      },
+      {
+        "place": "https://rism.online/places/3903250",
+        "activities": [
+          "Organist at St George's Roman Catholic Church, 1885-1889",
+          "Later home; site of most mature compositional work"
+        ]
+      },
+      {
+        "place": "suppa:places/london",
+        "activities": [
+          "Frequent conducting engagements at Queen's Hall and Crystal Palace",
+          "Publisher relationships (Novello & Co.)"
+        ]
+      }
+    ]
+  },
+  "biography": "English composer, best known for the Enigma Variations, the Pomp and Circumstance Marches, and the cello and violin concertos.",
+  "biographyNote": "Largely self-taught as a composer, Elgar built his early career around Worcestershire teaching and performing before a run of choral and orchestral successes in the 1890s established his national reputation. His mature style is marked by its melodic breadth, orchestral colour, and habit of encoding personal references into his scores, most famously in the Enigma Variations (1899), where each variation is a musical portrait of a friend.",
+  "relatedWorks": {
+    "items": [
+      {
+        "role": "arranger",
+        "relatedTo": "suppa:works/example-arrangement-0001"
+      }
+    ]
+  },
+  "events": {
+    "items": [
+      {
+        "type": "marriage",
+        "place": "https://rism.online/places/50010335",
+        "date": "1889-05-08",
+        "relatedTo": "suppa:events/elgar-marriage-1889"
+      },
+      {
+        "type": "knighthood",
+        "place": "suppa:places/london",
+        "date": "1904-07-05",
+        "relatedTo": "suppa:events/elgar-knighthood-1904"
+      }
+    ]
+  },
+  "documents": {
+    "items": [
+      {
+        "format": "letter",
+        "date": "1898-10-21",
+        "relatedTo": "suppa:documents/elgar-letter-1898-10-21"
+      }
+    ]
+  },
+  "literature": {
+    "items": [
+      {
+        "citation": "Kennedy, Michael. 1968. Portrait of Elgar. London: Oxford University Press."
+      },
+      {
+        "citation": "Moore, Jerrold Northrop. 1984. Edward Elgar: A Creative Life. Oxford: Oxford University Press."
+      }
+    ]
+  },
+  "personNotes": "Illustrative example record. Values are for schema demonstration purposes and have not been verified against primary sources."
+}
