@@ -1,0 +1,73 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
+
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+    "cidoc": "http://www.cidoc-crm.org/cidoc-crm/",
+    "prov": "http://www.w3.org/ns/prov#",
+
+    "type": "@type",
+    "id": "@id",
+
+    "created": { "@id": "dcterms:created", "@type": "xsd:dateTime" },
+    "updated": { "@id": "dcterms:modified", "@type": "xsd:dateTime" },
+    "derivedFrom": { "@id": "prov:wasDerivedFrom", "@type": "@id" },
+
+    "etcIdentifier": { "@id": "suppa:etcIdentifier" },
+
+    "activityByPlace": {
+      "@id": "suppa:activityByPlace",
+      "@type": "@id",
+      "@context": {
+        "items": {
+          "@id": "suppa:hasPlaceActivity",
+          "@container": "@set",
+          "@context": {
+            "place": { "@id": "cidoc:P7_took_place_at", "@type": "@id" },
+            "activities": { "@id": "suppa:hasActivity", "@container": "@set" }
+          }
+        }
+      }
+    },
+
+    "biography": { "@id": "dcterms:description" },
+    "biographyNote": { "@id": "suppa:biographyNote" },
+
+    "relatedWorks": {
+      "@id": "suppa:relatedWorks",
+      "@type": "@id",
+      "@context": {
+        "items": { "@id": "suppa:hasRelatedWork", "@container": "@set" },
+        "role": { "@id": "suppa:hasRelationRole" },
+        "relatedTo": { "@id": "dcterms:relation", "@type": "@id" }
+      }
+    },
+
+    "events": {
+      "@id": "suppa:events",
+      "@type": "@id",
+      "@context": { "items": { "@id": "suppa:hasEvent", "@container": "@set" } }
+    },
+    "documents": {
+      "@id": "suppa:documents",
+      "@type": "@id",
+      "@context": { "items": { "@id": "suppa:hasDocument", "@container": "@set" } }
+    },
+    "literature": {
+      "@id": "suppa:literature",
+      "@type": "@id",
+      "@context": {
+        "items": { "@id": "suppa:hasLiteratureReference", "@container": "@set" },
+        "citation": { "@id": "dcterms:bibliographicCitation" }
+      }
+    },
+
+    "personNotes": { "@id": "rdfs:comment" }
+  }
+}
