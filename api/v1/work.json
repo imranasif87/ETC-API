@@ -9,6 +9,7 @@
     "dcterms": "http://purl.org/dc/terms/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+    "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
     "prov": "http://www.w3.org/ns/prov#",
 
     "type": "@type",
@@ -18,18 +19,25 @@
     "updated": { "@id": "dcterms:modified", "@type": "xsd:dateTime" },
     "derivedFrom": { "@id": "prov:wasDerivedFrom", "@type": "@id" },
 
-    "etcIdentifier": { "@id": "suppa:etcIdentifier" },
-    "kentNumber": { "@id": "suppa:kentNumber" },
+    "migrationStatus": { "@id": "suppa:migrationStatus" },
 
-    "versions": {
-      "@id": "suppa:versions",
+    "etcIdentifier": { "@id": "suppa:etcIdentifier" },
+
+    "relationships": {
+      "@id": "suppa:relationships",
       "@type": "@id",
       "@context": {
-        "items": { "@id": "suppa:hasVersion", "@container": "@set" },
-        "relatedTo": { "@id": "dcterms:relation", "@type": "@id" }
+        "items": { "@id": "suppa:hasRelationship", "@container": "@set" },
+        "role": { "@id": "suppa:hasRole", "@type": "@vocab" },
+        "qualifier": { "@id": "suppa:hasQualifier", "@type": "@vocab" },
+        "relatedTo": { "@id": "dcterms:relation", "@type": "@id" },
+        "note": { "@id": "rdfs:comment" },
+        "migrationStatus": { "@id": "suppa:migrationStatus" }
       }
     },
-
+    "textSource": {
+       "@id": "suppa:textSource"
+    },
     "themes": {
       "@id": "suppa:themes",
       "@type": "@id",
@@ -38,17 +46,6 @@
         "relatedTo": { "@id": "dcterms:relation", "@type": "@id" }
       }
     },
-
-    "dedicatees": {
-      "@id": "suppa:dedicatees",
-      "@type": "@id",
-      "@context": {
-        "items": { "@id": "suppa:hasDedicatee", "@container": "@set" },
-        "relatedTo": { "@id": "dcterms:relation", "@type": "@id" }
-      }
-    },
-
-    "textSource": { "@id": "suppa:textSource" },
 
     "events": {
       "@id": "suppa:events",
