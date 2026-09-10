@@ -1,0 +1,28 @@
+{
+  "@context": "https://etc.web.ox.ac.uk/api/v1/work.json",
+  "id": "https://etc.web.ox.ac.uk/suppa/works/enigma-variations",
+  "type": "suppa:Work",
+  "etcIdentifier": "ETC-36",
+  "derivedFrom": null,
+  "created": "2026-07-29T10:00:00Z",
+  "updated": "2026-07-30T09:00:00Z",
+  "title": "Enigma Variations",
+  "subtitle": "Variations on an Original Theme, Op. 36",
+  "opus": "Op. 36",
+  "dateStatement": "1898–1899",
+  "scoring": "Orchestra",
+  "genre": "Orchestral music",
+  "summary": "Illustrative placeholder record for UI development — not yet cross-checked against RISM or a cataloguing source.",
+  "relationships": {
+    "items": [
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "person",
+        "relatedTo": "ETC-P-0001",
+        "note": "Composer",
+        "migrationStatus": "in-rism"
+      }
+    ]
+  },
+  "workNotes": "Illustrative placeholder record for UI development — not yet catalogued in RISM or cross-checked against a cataloguing source."
+}

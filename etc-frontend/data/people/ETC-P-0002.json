@@ -1,0 +1,25 @@
+{
+  "@context": "https://etc.web.ox.ac.uk/api/v1/person.json",
+  "id": "https://etc.web.ox.ac.uk/suppa/people/etc-p-0002",
+  "type": "suppa:Person",
+  "etcIdentifier": "ETC-P-0002",
+  "derivedFrom": "https://rism.online/people/51041225",
+  "created": "2026-07-29T10:00:00Z",
+  "updated": "2026-07-30T09:00:00Z",
+  "name": "Alice Elgar",
+  "lifeDates": "1848–1920",
+  "profession": "Writer, lyricist",
+  "relationship": "Married to Edward Elgar",
+  "biography": "Novelist and poet; wife of Edward Elgar from 1889. Wrote the text for 'In Haven', one of the Sea Pictures songs.",
+  "relationships": {
+    "items": [
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/lyr",
+        "targetType": "work",
+        "relatedTo": "ETC-44.2",
+        "note": "Lyricist for this work",
+        "migrationStatus": "in-rism"
+      }
+    ]
+  }
+}

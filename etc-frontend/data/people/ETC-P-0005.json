@@ -1,0 +1,24 @@
+{
+  "@context": "https://etc.web.ox.ac.uk/api/v1/person.json",
+  "id": "https://etc.web.ox.ac.uk/suppa/people/etc-p-0005",
+  "type": "suppa:Person",
+  "etcIdentifier": "ETC-P-0005",
+  "derivedFrom": "https://rism.online/people/51041228",
+  "created": "2026-07-29T10:00:00Z",
+  "updated": "2026-07-30T09:00:00Z",
+  "name": "Adam Lindsay Gordon",
+  "lifeDates": "1833–1870",
+  "profession": "Poet",
+  "biography": "Australian poet; his verse provided the text for 'The Swimmer', the closing song of Sea Pictures.",
+  "relationships": {
+    "items": [
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/lyr",
+        "targetType": "work",
+        "relatedTo": "ETC-44.5",
+        "note": "Lyricist for this work",
+        "migrationStatus": "in-rism"
+      }
+    ]
+  }
+}

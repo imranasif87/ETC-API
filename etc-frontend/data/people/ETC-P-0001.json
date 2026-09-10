@@ -1,0 +1,82 @@
+{
+  "@context": "https://etc.web.ox.ac.uk/api/v1/person.json",
+  "id": "https://etc.web.ox.ac.uk/suppa/people/etc-p-0001",
+  "type": "suppa:Person",
+  "etcIdentifier": "ETC-P-0001",
+  "derivedFrom": "https://rism.online/people/45128",
+  "created": "2026-07-29T10:00:00Z",
+  "updated": "2026-07-30T09:00:00Z",
+  "name": "Edward Elgar",
+  "lifeDates": "1857–1934",
+  "profession": "Composer",
+  "biography": "English composer, best known for the Enigma Variations, the Pomp and Circumstance Marches, and the cello and violin concertos.",
+  "activityByPlace": {
+    "items": [
+      {
+        "place": "Lower Broadheath",
+        "activities": []
+      },
+      {
+        "place": "Worcester",
+        "activities": []
+      },
+      {
+        "place": "London",
+        "activities": []
+      }
+    ]
+  },
+  "relationships": {
+    "items": [
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "work",
+        "relatedTo": "ETC-44",
+        "note": "Composer of this work",
+        "migrationStatus": "in-rism"
+      },
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "work",
+        "relatedTo": "ETC-44.1",
+        "note": "Composer of this work",
+        "migrationStatus": "in-rism"
+      },
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "work",
+        "relatedTo": "ETC-44.2",
+        "note": "Composer of this work",
+        "migrationStatus": "in-rism"
+      },
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "work",
+        "relatedTo": "ETC-44.3",
+        "note": "Composer of this work",
+        "migrationStatus": "in-rism"
+      },
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "work",
+        "relatedTo": "ETC-44.4",
+        "note": "Composer of this work",
+        "migrationStatus": "in-rism"
+      },
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "work",
+        "relatedTo": "ETC-44.5",
+        "note": "Composer of this work",
+        "migrationStatus": "in-rism"
+      },
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
+        "targetType": "work",
+        "relatedTo": "ETC-36",
+        "note": "Composer of this work",
+        "migrationStatus": "in-rism"
+      }
+    ]
+  }
+}

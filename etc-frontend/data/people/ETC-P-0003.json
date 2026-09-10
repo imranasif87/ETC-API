@@ -1,0 +1,24 @@
+{
+  "@context": "https://etc.web.ox.ac.uk/api/v1/person.json",
+  "id": "https://etc.web.ox.ac.uk/suppa/people/etc-p-0003",
+  "type": "suppa:Person",
+  "etcIdentifier": "ETC-P-0003",
+  "derivedFrom": "https://rism.online/people/51041226",
+  "created": "2026-07-29T10:00:00Z",
+  "updated": "2026-07-30T09:00:00Z",
+  "name": "Roden Noel",
+  "lifeDates": "1834–1894",
+  "profession": "Poet",
+  "biography": "English poet whose verse provided the text for 'Sea Slumber Song', the opening song of Sea Pictures.",
+  "relationships": {
+    "items": [
+      {
+        "qualifier": "http://id.loc.gov/vocabulary/relators/lyr",
+        "targetType": "work",
+        "relatedTo": "ETC-44.1",
+        "note": "Lyricist for this work",
+        "migrationStatus": "in-rism"
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People — ETC Pages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg etc-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ETC Pages<small>Elgar Thematic Catalogue</small></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link etc-nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link etc-nav-link" href="works.html">Works</a></li>
+          <li class="nav-item"><a class="nav-link etc-nav-link" href="people.html">People</a></li>
+          <li class="nav-item"><a class="nav-link etc-nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sources <span class="badge bg-secondary bg-opacity-25 text-secondary ms-1" style="font-size:0.6rem;">soon</span></a></li>
+          <li class="nav-item"><a class="nav-link etc-nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Places <span class="badge bg-secondary bg-opacity-25 text-secondary ms-1" style="font-size:0.6rem;">soon</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="etc-hero" style="padding: 2.25rem 0;">
+    <div class="container">
+      <span class="etc-eyebrow">Browse</span>
+      <h1 style="font-size: 1.9rem;">People</h1>
+      <form class="d-flex etc-search-form mt-3" style="max-width: 36rem;" role="search">
+        <label for="peopleSearch" class="visually-hidden">Search people</label>
+        <input type="search" id="peopleSearch" class="form-control" placeholder="Search by name or profession&hellip;">
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="container py-4">
+    <div class="row g-4">
+
+      <div class="col-lg-3">
+        <div class="etc-filter-rail">
+          <h6>Filter by role</h6>
+          <div class="form-check">
+            <input class="form-check-input filter-role" type="checkbox" value="Composer" id="roleComposer" checked>
+            <label class="form-check-label" for="roleComposer">Composer</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input filter-role" type="checkbox" value="Poet" id="rolePoet" checked>
+            <label class="form-check-label" for="rolePoet">Poet</label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input filter-role" type="checkbox" value="other" id="roleOther" checked>
+            <label class="form-check-label" for="roleOther">Other</label>
+          </div>
+
+          <h6>Life period <span class="etc-filter-placeholder">(placeholder)</span></h6>
+          <p class="etc-filter-placeholder mb-0">Century/decade facets wired for a future release.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-9">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <p class="text-secondary mb-0 small" id="resultsCount">Loading&hellip;</p>
+        </div>
+        <div class="row g-3" id="peopleList">
+          <!-- populated by JS -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="etc-footer mt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h6>ETC Pages</h6>
+          <p class="mb-0">A prototype interface for exploring the Elgar Thematic Catalogue.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Browse</h6>
+          <p class="mb-1"><a href="works.html">Works</a></p>
+          <p class="mb-0"><a href="people.html">People</a></p>
+        </div>
+        <div class="col-md-4">
+          <h6>Data</h6>
+          <p class="mb-0"><a href="https://rism.online/" target="_blank" rel="noopener">RISM Online</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/etc-data.js"></script>
+  <script src="assets/js/people.js"></script>
+</body>
+</html>

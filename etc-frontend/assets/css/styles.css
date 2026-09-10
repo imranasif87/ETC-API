@@ -1,0 +1,434 @@
+/* ==========================================================================
+   ETC Pages — design tokens
+   ========================================================================== */
+:root {
+  --etc-paper: #F3F5F1;
+  --etc-paper-raised: #FFFFFF;
+  --etc-ink: #1B2A4A;
+  --etc-ink-soft: #2E3F63;
+  --etc-slate: #5B6570;
+  --etc-slate-light: #8991A0;
+  --etc-rubric: #8C2F39;
+  --etc-rubric-dark: #6E2029;
+  --etc-gold: #B08D57;
+  --etc-hairline: #DBDFD8;
+  --etc-hairline-strong: #C3C9BF;
+
+  --etc-font-display: 'Lora', 'Georgia', serif;
+  --etc-font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --etc-font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+
+  --etc-radius: 3px;
+  --etc-shadow-card: 0 1px 2px rgba(27, 42, 74, 0.06), 0 1px 1px rgba(27, 42, 74, 0.04);
+  --etc-shadow-raised: 0 4px 16px rgba(27, 42, 74, 0.08);
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+html, body {
+  background-color: var(--etc-paper);
+  color: var(--etc-ink);
+  font-family: var(--etc-font-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4, .etc-display {
+  font-family: var(--etc-font-display);
+  color: var(--etc-ink);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.etc-mono {
+  font-family: var(--etc-font-mono);
+  font-size: 0.85em;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--etc-rubric);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--etc-rubric-dark);
+  text-decoration: underline;
+}
+
+/* Visible keyboard focus everywhere — accessibility floor */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+.card:focus-visible {
+  outline: 2px solid var(--etc-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* ==========================================================================
+   Signature element: five-line staff motif
+   Used as a section divider and under the active nav item — ties the
+   interface directly back to the subject (a thematic music catalogue)
+   rather than a decorative generic rule.
+   ========================================================================== */
+.etc-staff-rule {
+  height: 14px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--etc-hairline-strong) 0,
+    var(--etc-hairline-strong) 1px,
+    transparent 1px,
+    transparent 3.5px
+  );
+  background-size: 100% 14px;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.etc-staff-rule--gold {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--etc-gold) 0,
+    var(--etc-gold) 1px,
+    transparent 1px,
+    transparent 3.5px
+  );
+}
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+.etc-navbar {
+  background-color: var(--etc-paper-raised);
+  border-bottom: 1px solid var(--etc-hairline);
+}
+
+.etc-navbar .navbar-brand {
+  font-family: var(--etc-font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  color: var(--etc-ink);
+}
+
+.etc-navbar .navbar-brand small {
+  display: block;
+  font-family: var(--etc-font-body);
+  font-weight: 400;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--etc-slate);
+}
+
+.etc-nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--etc-ink-soft) !important;
+  padding: 0.5rem 0.9rem !important;
+  position: relative;
+}
+
+.etc-nav-link.active {
+  color: var(--etc-rubric) !important;
+}
+
+.etc-nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0.9rem;
+  right: 0.9rem;
+  bottom: 0;
+  height: 10px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    var(--etc-rubric) 0,
+    var(--etc-rubric) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.55;
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+.etc-hero {
+  background-color: var(--etc-paper-raised);
+  border-bottom: 1px solid var(--etc-hairline);
+  padding: 3.5rem 0 3rem;
+}
+
+.etc-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.etc-hero p.lead {
+  color: var(--etc-slate);
+  max-width: 42rem;
+  font-size: 1.05rem;
+}
+
+.etc-eyebrow {
+  font-family: var(--etc-font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--etc-rubric);
+  margin-bottom: 0.6rem;
+  display: inline-block;
+}
+
+/* ==========================================================================
+   Search
+   ========================================================================== */
+.etc-search-form .form-control {
+  border-color: var(--etc-hairline-strong);
+  border-radius: var(--etc-radius) 0 0 var(--etc-radius);
+  padding: 0.65rem 1rem;
+}
+.etc-search-form .form-control:focus {
+  border-color: var(--etc-ink);
+  box-shadow: 0 0 0 0.2rem rgba(27, 42, 74, 0.1);
+}
+.etc-search-form .btn {
+  background-color: var(--etc-ink);
+  border-color: var(--etc-ink);
+  color: #fff;
+  border-radius: 0 var(--etc-radius) var(--etc-radius) 0;
+  padding: 0.65rem 1.25rem;
+}
+.etc-search-form .btn:hover {
+  background-color: var(--etc-ink-soft);
+  border-color: var(--etc-ink-soft);
+}
+
+/* ==========================================================================
+   Cards
+   ========================================================================== */
+.etc-card {
+  background-color: var(--etc-paper-raised);
+  border: 1px solid var(--etc-hairline);
+  border-radius: var(--etc-radius);
+  box-shadow: var(--etc-shadow-card);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  height: 100%;
+}
+.etc-card:hover {
+  box-shadow: var(--etc-shadow-raised);
+  transform: translateY(-2px);
+}
+.etc-card .card-body {
+  padding: 1.25rem 1.35rem;
+}
+.etc-card-title {
+  font-family: var(--etc-font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+.etc-card-title a {
+  color: var(--etc-ink);
+}
+.etc-card-title a:hover {
+  color: var(--etc-rubric);
+  text-decoration: none;
+}
+.etc-card-subtitle {
+  color: var(--etc-slate);
+  font-size: 0.88rem;
+  margin-bottom: 0.75rem;
+}
+.etc-card-meta {
+  font-size: 0.82rem;
+  color: var(--etc-slate);
+}
+
+/* ==========================================================================
+   Badges — catalogue identifiers rendered in mono, not decorative pills
+   ========================================================================== */
+.etc-badge-id {
+  font-family: var(--etc-font-mono);
+  font-size: 0.72rem;
+  background-color: var(--etc-paper);
+  border: 1px solid var(--etc-hairline-strong);
+  color: var(--etc-ink-soft);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--etc-radius);
+  display: inline-block;
+}
+
+.etc-badge-type {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--etc-radius);
+}
+.etc-badge-type--cycle { background-color: rgba(176, 141, 87, 0.15); color: var(--etc-gold); }
+.etc-badge-type--song  { background-color: rgba(27, 42, 74, 0.08); color: var(--etc-ink-soft); }
+.etc-badge-type--work  { background-color: rgba(140, 47, 57, 0.1); color: var(--etc-rubric); }
+
+.etc-badge-note {
+  background-color: rgba(140, 47, 57, 0.08);
+  border: 1px solid rgba(140, 47, 57, 0.25);
+  color: var(--etc-rubric-dark);
+  font-size: 0.78rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--etc-radius);
+}
+
+/* ==========================================================================
+   Filter rail
+   ========================================================================== */
+.etc-filter-rail {
+  background-color: var(--etc-paper-raised);
+  border: 1px solid var(--etc-hairline);
+  border-radius: var(--etc-radius);
+  padding: 1.25rem;
+}
+.etc-filter-rail h6 {
+  font-family: var(--etc-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--etc-slate);
+  margin-bottom: 0.9rem;
+}
+.etc-filter-rail .form-check {
+  margin-bottom: 0.5rem;
+}
+.etc-filter-rail .form-check-label {
+  font-size: 0.9rem;
+  color: var(--etc-ink-soft);
+}
+.etc-filter-placeholder {
+  font-size: 0.78rem;
+  color: var(--etc-slate-light);
+  font-style: italic;
+}
+
+/* ==========================================================================
+   Detail pages
+   ========================================================================== */
+.etc-detail-header {
+  background-color: var(--etc-paper-raised);
+  border-bottom: 1px solid var(--etc-hairline);
+  padding: 2.5rem 0;
+}
+.etc-detail-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--etc-hairline);
+}
+.etc-detail-section:last-child {
+  border-bottom: none;
+}
+.etc-detail-section h2 {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+.etc-field-label {
+  font-family: var(--etc-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--etc-slate);
+  margin-bottom: 0.2rem;
+}
+.etc-field-value {
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+}
+
+.etc-member-list .list-group-item {
+  border-color: var(--etc-hairline);
+  padding: 0.9rem 1.1rem;
+}
+.etc-member-list .list-group-item:hover {
+  background-color: rgba(140, 47, 57, 0.03);
+}
+
+/* ==========================================================================
+   Empty / loading states
+   ========================================================================== */
+.etc-empty-state {
+  text-align: center;
+  padding: 3.5rem 1rem;
+  color: var(--etc-slate);
+}
+.etc-empty-state .etc-eyebrow {
+  color: var(--etc-slate-light);
+}
+
+.etc-skeleton {
+  background: linear-gradient(90deg, var(--etc-hairline) 25%, #eef0eb 37%, var(--etc-hairline) 63%);
+  background-size: 400% 100%;
+  animation: etc-shimmer 1.4s ease infinite;
+  border-radius: var(--etc-radius);
+}
+@keyframes etc-shimmer {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .etc-skeleton { animation: none; background: var(--etc-hairline); }
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.etc-footer {
+  background-color: var(--etc-ink);
+  color: rgba(255, 255, 255, 0.7);
+  padding: 2.5rem 0;
+  font-size: 0.88rem;
+}
+.etc-footer a {
+  color: rgba(255, 255, 255, 0.85);
+}
+.etc-footer h6 {
+  font-family: var(--etc-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0.9rem;
+}
+
+/* ==========================================================================
+   Dashboard stat tiles
+   ========================================================================== */
+.etc-stat-tile {
+  background-color: var(--etc-paper-raised);
+  border: 1px solid var(--etc-hairline);
+  border-radius: var(--etc-radius);
+  padding: 1.5rem;
+  text-align: left;
+}
+.etc-stat-tile .etc-stat-number {
+  font-family: var(--etc-font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--etc-ink);
+  line-height: 1;
+}
+.etc-stat-tile .etc-stat-label {
+  font-size: 0.85rem;
+  color: var(--etc-slate);
+  margin-top: 0.35rem;
+}
+
+@media (max-width: 767.98px) {
+  .etc-hero h1 { font-size: 1.8rem; }
+  .etc-hero { padding: 2.25rem 0 1.75rem; }
+}

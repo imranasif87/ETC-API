@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-07-29T12:00:00Z",
+  "note": "Sample data for frontend development. Identifiers and life dates for Elgar and the Sea Pictures lyricists are drawn from real RISM person records established during the ETC/RISM data modelling work.",
+  "people": [
+    {
+      "etcIdentifier": "ETC-P-0001",
+      "name": "Edward Elgar",
+      "lifeDates": "1857–1934",
+      "profession": "Composer",
+      "id": "https://rism.online/people/45128",
+      "biography": "English composer, best known for the Enigma Variations, the Pomp and Circumstance Marches, and the cello and violin concertos.",
+      "workCount": 6,
+      "placesActive": [
+        "Lower Broadheath",
+        "Worcester",
+        "London"
+      ],
+      "derivedFrom": "https://rism.online/people/45128"
+    },
+    {
+      "etcIdentifier": "ETC-P-0002",
+      "name": "Alice Elgar",
+      "lifeDates": "1848–1920",
+      "profession": "Writer, lyricist",
+      "id": "https://rism.online/people/51041225",
+      "biography": "Novelist and poet; wife of Edward Elgar from 1889. Wrote the text for 'In Haven', one of the Sea Pictures songs.",
+      "workCount": 1,
+      "relationship": "Married to Edward Elgar",
+      "derivedFrom": "https://rism.online/people/51041225"
+    },
+    {
+      "etcIdentifier": "ETC-P-0003",
+      "name": "Roden Noel",
+      "lifeDates": "1834–1894",
+      "profession": "Poet",
+      "id": "https://rism.online/people/51041226",
+      "biography": "English poet whose verse provided the text for 'Sea Slumber Song', the opening song of Sea Pictures.",
+      "workCount": 1,
+      "derivedFrom": "https://rism.online/people/51041226"
+    },
+    {
+      "etcIdentifier": "ETC-P-0004",
+      "name": "Richard Garnett",
+      "lifeDates": "1835–1906",
+      "profession": "Writer, librarian",
+      "id": "https://rism.online/people/51041227",
+      "biography": "Writer and Keeper of Printed Books at the British Museum; his poem 'Where Corals Lie' was set as the fourth song of Sea Pictures.",
+      "workCount": 1,
+      "derivedFrom": "https://rism.online/people/51041227"
+    },
+    {
+      "etcIdentifier": "ETC-P-0005",
+      "name": "Adam Lindsay Gordon",
+      "lifeDates": "1833–1870",
+      "profession": "Poet",
+      "id": "https://rism.online/people/51041228",
+      "biography": "Australian poet; his verse provided the text for 'The Swimmer', the closing song of Sea Pictures.",
+      "workCount": 1,
+      "derivedFrom": "https://rism.online/people/51041228"
+    },
+    {
+      "etcIdentifier": "ETC-P-0006",
+      "name": "Elizabeth Barrett Browning",
+      "lifeDates": "1806–1861",
+      "profession": "Poet",
+      "id": "https://rism.online/people/30113276",
+      "biography": "English poet whose verse was set as 'Sabbath Morning at Sea', the third song of Sea Pictures.",
+      "workCount": 1,
+      "derivedFrom": "https://rism.online/people/30113276"
+    }
+  ]
+}
