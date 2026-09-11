@@ -1,0 +1,59 @@
+{
+    "@context": "https://imranasif87.github.io/ETC-API/api/v1/performance.json",
+    "id": "https://etc.web.ox.ac.uk/suppa/performances/norwich-1899-sea-pictures-premiere",
+    "type": "suppa:Performance",
+    "etcIdentifier": "ETC-0001",
+    "created": "2026-09-05T10:00:00Z",
+    "updated": "2026-09-05T10:00:00Z",
+    "date": "1899-10-05",
+    "relationships": {
+        "items": [
+            {
+                "role": "etcrel:work",
+                "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/sea-pictures",
+                "note": "Work performed"
+            },
+            {
+                "role": "etcrel:venue",
+                "note": "Norwich, St Andrew's Hall",
+                "certainty": "confirmed"
+            },
+            {
+                "role": "etcrel:performer",
+                "relatedTo": "https://etc.web.ox.ac.uk/suppa/people/example-clara-butt",
+                "note": "Contralto soloist",
+                "certainty": "confirmed",
+                "authorityFile": "https://viaf.org/viaf/example-clara-butt"
+            },
+            {
+                "role": "etcrel:conductor",
+                "relatedTo": "https://rism.online/people/45128",
+                "note": "Composer conducted the premiere",
+                "certainty": "confirmed"
+            },
+            {
+                "role": "etcrel:organizer",
+                "entityType": "etcrel:festival",
+                "note": "Norwich Festival",
+                "certainty": "probable"
+            }
+        ]
+    },
+    "descriptionLabel": "Premiere of Sea Pictures",
+    "description": "First performance of the complete cycle, with Clara Butt as soloist and the composer conducting. Part of the 1899 Norwich Festival programme.",
+    "reviews": {
+        "items": [
+            {
+                "citation": "1 [No title or author], The Musical Times, November 1899, p. 730."
+            }
+        ]
+    },
+    "evidence": {
+        "items": [
+            {
+                "reference": "Norwich Festival concert programme, 5 October 1899",
+                "evidenceType": "etcrel:programme"
+            }
+        ]
+    }
+}

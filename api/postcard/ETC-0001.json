@@ -1,0 +1,40 @@
+{
+    "@context": "https://imranasif87.github.io/ETC-API/api/v1/postcard.json",
+    "id": "https://etc.web.ox.ac.uk/suppa/postcards/elgar-jaeger-1899-10-06",
+    "type": "suppa:Postcard",
+    "etcIdentifier": "ETC-0001",
+    "created": "2026-09-05T10:00:00Z",
+    "updated": "2026-09-05T10:00:00Z",
+    "postmarkDate": "1899-10-06",
+    "relationships": {
+        "items": [
+            {
+                "role": "etcrel:sender",
+                "relatedTo": "https://rism.online/people/45128",
+                "note": "Edward Elgar"
+            },
+            {
+                "role": "etcrel:recipient",
+                "note": "August Jaeger",
+                "certainty": "confirmed"
+            },
+            {
+                "role": "etcrel:postmarkLocation",
+                "note": "Norwich"
+            },
+            {
+                "role": "etcrel:depictedLocation",
+                "relatedTo": "https://etc.web.ox.ac.uk/suppa/places/st-andrews-hall-norwich",
+                "note": "St Andrew's Hall, Norwich \u2014 view of the exterior"
+            }
+        ]
+    },
+    "itemLocation": {
+        "repositoryName": "The British Library",
+        "shelfmark": "Add MS 47900B, item 3",
+        "uri": "https://example.org/digitised/bl-add-ms-47900b-item3",
+        "linkLabel": "Digitised postcard image"
+    },
+    "messageTranscription": "Norwich went splendidly \u2014 the hall was full & the Butt in great voice. Home Monday. E.E.",
+    "notes": "Illustrative example \u2014 sent the day after the Sea Pictures premiere (ETC-PERF-0001), depicting the premiere venue (ETC-PLACE-0001). Shelfmark, repository URI, and transcription are placeholders for schema demonstration and have not been checked against a real archival source."
+}

@@ -1,0 +1,56 @@
+{
+    "@context": "https://imranasif87.github.io/ETC-API/api/v1/correspondence.json",
+    "id": "https://etc.web.ox.ac.uk/suppa/correspondence/elgar-jaeger-1899-06-02",
+    "type": "suppa:Correspondence",
+    "etcIdentifier": "ETC-0001",
+    "created": "2026-09-05T10:00:00Z",
+    "updated": "2026-09-05T10:00:00Z",
+    "referenceType": "etcrel:letter",
+    "relationships": {
+        "items": [
+            {
+                "role": "etcrel:author",
+                "relatedTo": "https://rism.online/people/45128",
+                "note": "Edward Elgar"
+            },
+            {
+                "role": "etcrel:recipient",
+                "note": "August Jaeger",
+                "certainty": "confirmed"
+            },
+            {
+                "role": "etcrel:place",
+                "note": "Malvern"
+            },
+            {
+                "role": "etcrel:work",
+                "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/sea-pictures",
+                "note": "Letter discusses progress on the Sea Pictures orchestration"
+            }
+        ]
+    },
+    "date": "1899-06-02",
+    "itemLocation": {
+        "repositoryName": "The British Library",
+        "rismSiglum": "GB-Lbl",
+        "shelfmark": "Add MS 47900A, f. 12",
+        "uri": "https://example.org/archives/bl-add-ms-47900a",
+        "linkLabel": "British Library catalogue entry"
+    },
+    "printedReproductions": {
+        "items": [
+            {
+                "title": "Moore, Jerrold Northrop (ed.). 1990. Elgar and His Publishers. Oxford: Clarendon Press, letter no. 214."
+            }
+        ]
+    },
+    "digitalResources": {
+        "items": [
+            {
+                "uri": "https://example.org/digitised/bl-add-ms-47900a-f12",
+                "linkLabel": "Digitised manuscript image"
+            }
+        ]
+    },
+    "notes": "Illustrative example record. Shelfmark, repository URI, and digital resource link are placeholders for schema demonstration and have not been checked against a real archival catalogue."
+}

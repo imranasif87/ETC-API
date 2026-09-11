@@ -1,56 +1,29 @@
 {
-  "@context": "https://etc.web.ox.ac.uk/api/v1/work.json",
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/work.json",
   "id": "https://etc.web.ox.ac.uk/suppa/works/sea-pictures",
   "type": "suppa:Work",
   "etcIdentifier": "ETC-44",
   "derivedFrom": null,
   "created": "2026-07-29T10:00:00Z",
   "updated": "2026-07-30T09:00:00Z",
-  "relationships": {
+  "parts": {
     "items": [
       {
-        "qualifier": "https://etc.web.ox.ac.uk/vocabulary/relationship/#has-member",
-        "targetType": "work",
-        "relatedTo": "ETC-44.1",
-        "note": "Sea Slumber Song (op. 37/1)",
-        "migrationStatus": "suppa-provisional"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/etc-44.1"
       },
       {
-        "qualifier": "https://etc.web.ox.ac.uk/vocabulary/relationship/#has-member",
-        "targetType": "work",
-        "relatedTo": "ETC-44.2",
-        "note": "In Haven (op. 37/2)",
-        "migrationStatus": "suppa-provisional"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/etc-44.2"
       },
       {
-        "qualifier": "https://etc.web.ox.ac.uk/vocabulary/relationship/#has-member",
-        "targetType": "work",
-        "relatedTo": "ETC-44.3",
-        "note": "Sabbath Morning at Sea (op. 37/3)",
-        "migrationStatus": "suppa-provisional"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/etc-44.3"
       },
       {
-        "qualifier": "https://etc.web.ox.ac.uk/vocabulary/relationship/#has-member",
-        "targetType": "work",
-        "relatedTo": "ETC-44.4",
-        "note": "Where Corals Lie (op. 37/4 per cataloguing spreadsheet; live RISM record currently misstates this as op. 37/1)",
-        "migrationStatus": "suppa-provisional"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/etc-44.4"
       },
       {
-        "qualifier": "https://etc.web.ox.ac.uk/vocabulary/relationship/#has-member",
-        "targetType": "work",
-        "relatedTo": "ETC-44.5",
-        "note": "The Swimmer (op. 37/5)",
-        "migrationStatus": "suppa-provisional"
-      },
-      {
-        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
-        "targetType": "person",
-        "relatedTo": "ETC-P-0001",
-        "note": "Composer of the cycle as a whole",
-        "migrationStatus": "in-rism"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/etc-44.5"
       }
     ]
   },
-  "workNotes": "SuppA-native cycle resource. No single RISM work record represents Sea Pictures as a whole; RISM catalogues only the five constituent songs, all sharing partOf.workNumber 'KenE 1899-8'."
+  "workNotes": "SuppA-native cycle resource. No single RISM work record represents Sea Pictures as a whole; RISM currently catalogues the five constituent songs separately."
 }

@@ -3,7 +3,6 @@
     "@version": 1.1,
     "@protected": true,
     "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
-
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dcterms": "http://purl.org/dc/terms/",
@@ -11,61 +10,127 @@
     "suppa": "https://etc.web.ox.ac.uk/api/v1#",
     "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
     "prov": "http://www.w3.org/ns/prov#",
-
     "type": "@type",
     "id": "@id",
-
-    "created": { "@id": "dcterms:created", "@type": "xsd:dateTime" },
-    "updated": { "@id": "dcterms:modified", "@type": "xsd:dateTime" },
-    "derivedFrom": { "@id": "prov:wasDerivedFrom", "@type": "@id" },
-
-    "migrationStatus": { "@id": "suppa:migrationStatus" },
-
-    "etcIdentifier": { "@id": "suppa:etcIdentifier" },
-
-    "relationships": {
-      "@id": "suppa:relationships",
+    "created": {
+      "@id": "dcterms:created",
+      "@type": "xsd:dateTime"
+    },
+    "updated": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:dateTime"
+    },
+    "derivedFrom": {
+      "@id": "prov:wasDerivedFrom",
+      "@type": "@id"
+    },
+    "etcIdentifier": {
+      "@id": "suppa:etcIdentifier"
+    },
+    "versions": {
+      "@id": "suppa:versions",
       "@type": "@id",
       "@context": {
-        "items": { "@id": "suppa:hasRelationship", "@container": "@set" },
-        "role": { "@id": "suppa:hasRole", "@type": "@vocab" },
-        "qualifier": { "@id": "suppa:hasQualifier", "@type": "@vocab" },
-        "relatedTo": { "@id": "dcterms:relation", "@type": "@id" },
-        "note": { "@id": "rdfs:comment" },
-        "migrationStatus": { "@id": "suppa:migrationStatus" }
+        "items": {
+          "@id": "suppa:hasVersion",
+          "@container": "@set",
+          "@context": {
+            "title": {
+              "@id": "suppa:versionTitle"
+            },
+            "instrumentation": {
+              "@id": "suppa:versionInstrumentation"
+            },
+            "key": {
+              "@id": "suppa:versionKey"
+            },
+            "relatedTo": {
+              "@id": "dcterms:relation",
+              "@type": "@id"
+            }
+          }
+        }
       }
     },
-    "textSource": {
-       "@id": "suppa:textSource"
+    "parts": {
+      "@id": "suppa:parts",
+      "@type": "@id",
+      "@context": {
+        "items": {
+          "@id": "suppa:hasPart",
+          "@container": "@set",
+          "@context": {
+            "relatedTo": {
+              "@id": "dcterms:relation",
+              "@type": "@id"
+            }
+          }
+        }
+      }
     },
     "themes": {
       "@id": "suppa:themes",
       "@type": "@id",
       "@context": {
-        "items": { "@id": "suppa:hasTheme", "@container": "@set" },
-        "relatedTo": { "@id": "dcterms:relation", "@type": "@id" }
+        "items": {
+          "@id": "suppa:hasTheme",
+          "@container": "@set"
+        },
+        "relatedTo": {
+          "@id": "dcterms:relation",
+          "@type": "@id"
+        }
       }
     },
-
+    "dedicatees": {
+      "@id": "suppa:dedicatees",
+      "@type": "@id",
+      "@context": {
+        "items": {
+          "@id": "suppa:hasDedicatee",
+          "@container": "@set",
+          "@type": "@id"
+        }
+      }
+    },
+    "textSource": {
+      "@id": "suppa:textSource"
+    },
     "events": {
       "@id": "suppa:events",
       "@type": "@id",
-      "@context": { "items": { "@id": "suppa:hasEvent", "@container": "@set" } }
+      "@context": {
+        "items": {
+          "@id": "suppa:hasEvent",
+          "@container": "@set"
+        }
+      }
     },
     "documents": {
       "@id": "suppa:documents",
       "@type": "@id",
-      "@context": { "items": { "@id": "suppa:hasDocument", "@container": "@set" } }
+      "@context": {
+        "items": {
+          "@id": "suppa:hasDocument",
+          "@container": "@set"
+        }
+      }
     },
     "literature": {
       "@id": "suppa:literature",
       "@type": "@id",
       "@context": {
-        "items": { "@id": "suppa:hasLiteratureReference", "@container": "@set" },
-        "citation": { "@id": "dcterms:bibliographicCitation" }
+        "items": {
+          "@id": "suppa:hasLiteratureReference",
+          "@container": "@set"
+        },
+        "citation": {
+          "@id": "dcterms:bibliographicCitation"
+        }
       }
     },
-
-    "workNotes": { "@id": "rdfs:comment" }
+    "workNotes": {
+      "@id": "rdfs:comment"
+    }
   }
 }

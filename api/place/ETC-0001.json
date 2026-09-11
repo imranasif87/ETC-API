@@ -1,0 +1,27 @@
+{
+    "@context": "https://imranasif87.github.io/ETC-API/api/v1/place.json",
+    "id": "https://etc.web.ox.ac.uk/suppa/places/st-andrews-hall-norwich",
+    "type": "suppa:Place",
+    "etcIdentifier": "ETC-PLACE-0001",
+    "created": "2026-09-05T10:00:00Z",
+    "updated": "2026-09-05T10:00:00Z",
+    "placeName": "St Andrew's Hall",
+    "placeType": "etcrel:concertHall",
+    "cityTown": "Norwich",
+    "country": "United Kingdom",
+    "latitude": 52.6314,
+    "longitude": 1.2936,
+    "activeDates": "Medieval church converted to civic hall by 1540; still in use",
+    "currentStatus": "etcrel:extant",
+    "wikidataQid": "Q4396515",
+    "relationships": {
+        "items": [
+            {
+                "qualifier": "etcrel:withinPlace",
+                "note": "Norwich - no RISM place URI confirmed for Norwich at time of writing; link to add once verified",
+                "migrationStatus": "suppa-provisional"
+            }
+        ]
+    },
+    "notes": "Illustrative example - venue of the Sea Pictures premiere (see ETC-PERF-0001). Coordinates and Wikidata QID are placeholders for schema demonstration and have not been independently verified."
+}

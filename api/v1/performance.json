@@ -1,0 +1,112 @@
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+        "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "type": "@type",
+        "id": "@id",
+        "created": {
+            "@id": "dcterms:created",
+            "@type": "xsd:dateTime"
+        },
+        "updated": {
+            "@id": "dcterms:modified",
+            "@type": "xsd:dateTime"
+        },
+        "derivedFrom": {
+            "@id": "prov:wasDerivedFrom",
+            "@type": "@id"
+        },
+        "migrationStatus": {
+            "@id": "suppa:migrationStatus"
+        },
+        "etcIdentifier": {
+            "@id": "suppa:etcIdentifier"
+        },
+        "date": {
+            "@id": "suppa:performanceDate"
+        },
+        "relationships": {
+            "@id": "suppa:relationships",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasRelationship",
+                    "@container": "@set"
+                },
+                "role": {
+                    "@id": "suppa:hasRole",
+                    "@type": "@vocab"
+                },
+                "qualifier": {
+                    "@id": "suppa:hasQualifier",
+                    "@type": "@vocab"
+                },
+                "relatedTo": {
+                    "@id": "dcterms:relation",
+                    "@type": "@id"
+                },
+                "note": {
+                    "@id": "rdfs:comment"
+                },
+                "migrationStatus": {
+                    "@id": "suppa:migrationStatus"
+                },
+                "certainty": {
+                    "@id": "suppa:certainty"
+                },
+                "authorityFile": {
+                    "@id": "suppa:authorityFile",
+                    "@type": "@id"
+                },
+                "entityType": {
+                    "@id": "suppa:entityType",
+                    "@type": "@vocab"
+                }
+            }
+        },
+        "descriptionLabel": {
+            "@id": "suppa:descriptionLabel"
+        },
+        "description": {
+            "@id": "dcterms:description"
+        },
+        "reviews": {
+            "@id": "suppa:reviews",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasReview",
+                    "@container": "@set"
+                },
+                "citation": {
+                    "@id": "dcterms:bibliographicCitation"
+                }
+            }
+        },
+        "evidence": {
+            "@id": "suppa:evidence",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasEvidence",
+                    "@container": "@set"
+                },
+                "reference": {
+                    "@id": "dcterms:description"
+                },
+                "evidenceType": {
+                    "@id": "suppa:evidenceType",
+                    "@type": "@vocab"
+                }
+            }
+        }
+    }
+}

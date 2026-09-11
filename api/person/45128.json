@@ -1,5 +1,5 @@
 {
-  "@context": "https://etc.web.ox.ac.uk/api/v1/person.json",
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/person.json",
   "id": "https://etc.web.ox.ac.uk/suppa/people/45128",
   "type": "suppa:Person",
   "derivedFrom": "https://rism.online/people/45128",
@@ -22,7 +22,7 @@
         ]
       },
       {
-        "place": "suppa:places/london",
+        "place": "https://etc.web.ox.ac.uk/suppa/places/london",
         "activities": [
           "Frequent conducting engagements at Queen's Hall and Crystal Palace",
           "Publisher relationships (Novello & Co.)"
@@ -36,7 +36,7 @@
     "items": [
       {
         "role": "arranger",
-        "relatedTo": "suppa:works/example-arrangement-0001"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/example-arrangement-0001"
       }
     ]
   },
@@ -46,13 +46,13 @@
         "type": "marriage",
         "place": "https://rism.online/places/50010335",
         "date": "1889-05-08",
-        "relatedTo": "suppa:events/elgar-marriage-1889"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/events/elgar-marriage-1889"
       },
       {
         "type": "knighthood",
-        "place": "suppa:places/london",
+        "place": "https://etc.web.ox.ac.uk/suppa/places/london",
         "date": "1904-07-05",
-        "relatedTo": "suppa:events/elgar-knighthood-1904"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/events/elgar-knighthood-1904"
       }
     ]
   },
@@ -61,7 +61,7 @@
       {
         "format": "letter",
         "date": "1898-10-21",
-        "relatedTo": "suppa:documents/elgar-letter-1898-10-21"
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/documents/elgar-letter-1898-10-21"
       }
     ]
   },

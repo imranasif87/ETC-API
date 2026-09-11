@@ -1,23 +1,17 @@
 {
-  "@context": "https://etc.web.ox.ac.uk/api/v1/person.json",
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/person.json",
   "id": "https://etc.web.ox.ac.uk/suppa/people/etc-p-0004",
   "type": "suppa:Person",
   "etcIdentifier": "ETC-P-0004",
   "derivedFrom": "https://rism.online/people/51041227",
   "created": "2026-07-29T10:00:00Z",
   "updated": "2026-07-30T09:00:00Z",
-  "name": "Richard Garnett",
-  "lifeDates": "1835–1906",
-  "profession": "Writer, librarian",
   "biography": "Writer and Keeper of Printed Books at the British Museum; his poem 'Where Corals Lie' was set as the fourth song of Sea Pictures.",
-  "relationships": {
+  "relatedWorks": {
     "items": [
       {
-        "qualifier": "http://id.loc.gov/vocabulary/relators/lyr",
-        "targetType": "work",
-        "relatedTo": "ETC-44.4",
-        "note": "Lyricist for this work",
-        "migrationStatus": "in-rism"
+        "role": "http://id.loc.gov/vocabulary/relators/lyr",
+        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/etc-44.4"
       }
     ]
   }

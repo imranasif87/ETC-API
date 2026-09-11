@@ -1,35 +1,10 @@
 {
-  "@context": "https://etc.web.ox.ac.uk/api/v1/work.json",
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/work.json",
   "id": "https://etc.web.ox.ac.uk/suppa/works/etc-44.3",
   "type": "suppa:Work",
   "etcIdentifier": "ETC-44.3",
   "derivedFrom": "https://rism.online/works/51458",
   "created": "2026-07-29T10:00:00Z",
   "updated": "2026-07-30T09:00:00Z",
-  "relationships": {
-    "items": [
-      {
-        "qualifier": "https://etc.web.ox.ac.uk/vocabulary/relationship/#member-of",
-        "targetType": "work",
-        "relatedTo": "ETC-44",
-        "note": "Part of the Sea Pictures cycle",
-        "migrationStatus": "suppa-provisional"
-      },
-      {
-        "qualifier": "http://id.loc.gov/vocabulary/relators/cre",
-        "targetType": "person",
-        "relatedTo": "ETC-P-0001",
-        "note": "Composer",
-        "migrationStatus": "in-rism"
-      },
-      {
-        "qualifier": "http://id.loc.gov/vocabulary/relators/lyr",
-        "targetType": "person",
-        "relatedTo": "ETC-P-0006",
-        "note": "Lyricist",
-        "migrationStatus": "in-rism"
-      }
-    ]
-  },
   "workNotes": "Overlay on RISM record https://rism.online/works/51458. Fields already present on the RISM record (opus, key, scoring, text incipit, lyricist) are fetched live from RISM at page render, not duplicated here."
 }
