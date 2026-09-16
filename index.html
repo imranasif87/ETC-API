@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <a class="nav-link" href="/work/ETC-44" data-navigo><i class="bi bi-house-door"></i> Work</a>
+
+        <script src="https://unpkg.com/navigo"></script>
+        <script>
+            const base = "/"; // change if project page: "/ETC-API/" // repo name
+            const router = new Navigo(base, { hash: false, trailingSlash: false });
+
+            // Handle redirect coming back from 404.html
+            const params = new URLSearchParams(window.location.search);
+            if (params.has("redirect")) {
+                const redirectPath = params.get("redirect");
+                window.history.replaceState({}, "", redirectPath);
+            }
+
+            const sections = ["work", "people", "performance"];
+
+            sections.forEach((section) => {
+                router.on(`/${section}`, () => {
+                    console.log(`${section} listing`);
+                });
+
+                router.on(`/${section}/:etcID`, async ({ data }) => {
+                    console.log(`${section} item ->`, data.etcID);
+                    try {
+                        const res = await fetch(`etc-frontend/data/works/${data.etcID}.json`);
+                        const json = await res.json();
+                        console.log(json);          // raw JSON in console
+                        document.body.innerHTML = `<pre>${JSON.stringify(json, null, 2)}</pre>`; // show on page
+                    } catch (err) {
+                        console.error("Not found", err);
+                    }
+                });
+            });
+
+            router.on("/", () => {
+                console.log("Home");
+            });
+
+            router.notFound(() => {
+                console.log("404");
+            });
+
+            router.resolve();
+        </script>
+    </body>
+
+</html>
