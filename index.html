@@ -34,7 +34,7 @@
                 router.on(`/${section}/:etcID`, async ({ data }) => {
                     console.log(`${section} item ->`, data.etcID);
                     try {
-                        const res = await fetch(`etc-frontend/data/works/${data.etcID}.json`);
+                        const res = await fetch(`https://imranasif87.github.io/ETC-API/etc-frontend/data/works/${data.etcID}.json`);
                         const json = await res.json();
                         console.log(json);          // raw JSON in console
                         document.body.innerHTML = `<pre>${JSON.stringify(json, null, 2)}</pre>`; // show on page

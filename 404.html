@@ -8,7 +8,7 @@
             function normalizePath(path) {
                 return path !== '/' ? path.replace(/\/+$/, '') : path;
             }
-            debugger;
+            //debugger;
             const fullPath = normalizePath(window.location.pathname) + window.location.hash;
             const newUrl = "/ETC-API/index.html?redirect=" + encodeURIComponent(fullPath);
             window.location.replace(newUrl);
