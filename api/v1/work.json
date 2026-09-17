@@ -27,28 +27,31 @@
     "etcIdentifier": {
       "@id": "suppa:etcIdentifier"
     },
-    "versions": {
-      "@id": "suppa:versions",
+    "relationships": {
+      "@id": "suppa:relationships",
       "@type": "@id",
       "@context": {
         "items": {
-          "@id": "suppa:hasVersion",
-          "@container": "@set",
-          "@context": {
-            "title": {
-              "@id": "suppa:versionTitle"
-            },
-            "instrumentation": {
-              "@id": "suppa:versionInstrumentation"
-            },
-            "key": {
-              "@id": "suppa:versionKey"
-            },
-            "relatedTo": {
-              "@id": "dcterms:relation",
-              "@type": "@id"
-            }
-          }
+          "@id": "suppa:hasRelationship",
+          "@container": "@set"
+        },
+        "role": {
+          "@id": "suppa:hasRole",
+          "@type": "@vocab"
+        },
+        "qualifier": {
+          "@id": "suppa:hasQualifier",
+          "@type": "@vocab"
+        },
+        "relatedTo": {
+          "@id": "dcterms:relation",
+          "@type": "@id"
+        },
+        "note": {
+          "@id": "rdfs:comment"
+        },
+        "migrationStatus": {
+          "@id": "suppa:migrationStatus"
         }
       }
     },
