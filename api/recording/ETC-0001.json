@@ -1,0 +1,41 @@
+{
+    "@context": "https://imranasif87.github.io/ETC-API/api/v1/recording.json",
+    "id": "https://etc.web.ox.ac.uk/suppa/recordings/sea-pictures-example-1928",
+    "type": "suppa:Recording",
+    "etcIdentifier": "ETC-0001",
+    "created": "2026-09-05T10:00:00Z",
+    "updated": "2026-09-05T10:00:00Z",
+    "recordingDate": "1928",
+    "recordingLabel": "His Master's Voice (HMV)",
+    "catalogueNumber": "HMV D1729 (example)",
+    "format": "etcrel:78rpmDisc",
+    "relationships": {
+        "items": [
+            {
+                "relatedTo": "https://rism.online/people/45128",
+                "qualifier": "etcrel:conductor",
+                "note": "Elgar's involvement: conductor",
+                "certainty": "confirmed"
+            },
+            {
+                "role": "etcrel:soloist",
+                "note": "Contralto soloist (name not yet identified)",
+                "certainty": "uncertain"
+            },
+            {
+                "role": "etcrel:ensemble",
+                "note": "Orchestra not yet identified"
+            },
+            {
+                "qualifier": "etcrel:recordingOf",
+                "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/sea-pictures",
+                "note": "Work recorded"
+            }
+        ]
+    },
+    "audioAccess": {
+        "audioUrl": "https://archive.org/details/example-sea-pictures-1928",
+        "charmRecordingId": "CHARM-EX-0001",
+        "notes": "Transfer quality variable in places; surface noise audible on the opening bars."
+    }
+}
