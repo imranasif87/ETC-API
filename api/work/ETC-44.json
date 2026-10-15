@@ -1,26 +1,33 @@
 {
   "@context": "https://imranasif87.github.io/ETC-API/api/v1/work.json",
-  "id": "https://etc.web.ox.ac.uk/suppa/works/example-sea-pictures",
+  "id": "https://rism.online/works/51461",
   "type": "suppa:Work",
-  "derivedFrom": "https://rism.online/works/example-placeholder-id",
+  "derivedFrom": "https://rism.online/works/51461",
   "created": "2026-02-04T11:15:00Z",
   "updated": "2026-07-20T14:32:00Z",
   "etcIdentifier": "ETC-44",
-  "versions": {
-    "items": [
-      {
-        "title": "Sea Pictures (orchestral version)",
-        "instrumentation": "contralto solo, orchestra",
-        "key": "various (song cycle, no single overall key)",
-        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/example-sea-pictures-orchestral"
-      },
-      {
-        "title": "Sea Pictures (voice and piano)",
-        "instrumentation": "voice, piano",
-        "key": "various",
-        "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/example-sea-pictures-piano-vocal"
-      }
-    ]
+  "relationships": {
+        "items": [
+            {
+                "role": "etcrel:author",
+                "relatedTo": "https://rism.online/people/45128",
+                "note": "Edward Elgar"
+            },
+            {
+                "role": "etcrel:recipient",
+                "note": "August Jaeger",
+                "certainty": "confirmed"
+            },
+            {
+                "role": "etcrel:place",
+                "note": "Malvern"
+            },
+            {
+                "role": "etcrel:work",
+                "relatedTo": "https://etc.web.ox.ac.uk/suppa/works/sea-pictures",
+                "note": "Letter discusses progress on the Sea Pictures orchestration"
+            }
+        ]
   },
   "themes": {
     "items": [
