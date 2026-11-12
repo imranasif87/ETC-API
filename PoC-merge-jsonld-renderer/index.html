@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JSON-LD merge proof of concept</title>
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/renderer.css">
+    <link rel="stylesheet" href="css/generic-renderer.css">
+  </head>
+
+  <body>
+    <div class="container-fluid py-3">
+      <h1 class="h4 mb-1">JSON-LD merge proof of concept</h1>
+      <p class="text-body-secondary small">
+        Paste a RISM and a SuppA JSON-LD record, then press Merge. Everything runs in your browser.
+        Contexts for the Work records are built in; other contexts are fetched from the network.
+      </p>
+
+      <div class="row g-3">
+        <div class="col-lg-6">
+          <label class="form-label fw-semibold" for="input-a">A: RISM JSON-LD</label>
+          <textarea id="input-a" class="form-control" rows="13" spellcheck="false"></textarea>
+        </div>
+        <div class="col-lg-6">
+          <label class="form-label fw-semibold" for="input-b">B: SuppA JSON-LD</label>
+          <textarea id="input-b" class="form-control" rows="13" spellcheck="false"></textarea>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2 align-items-center my-3">
+        <button id="merge-button" class="btn btn-primary">Merge</button>
+        <button id="report-button" class="btn btn-outline-primary">Report</button>
+        <button id="generic-button" class="btn btn-outline-success">Generic view (no config)</button>
+        <button id="sample-button" class="btn btn-outline-secondary">Load Work sample</button>
+        <div class="form-check ms-2">
+          <input id="derived-checkbox" class="form-check-input" type="checkbox">
+          <label class="form-check-label small" for="derived-checkbox">
+            Treat prov:wasDerivedFrom as the same record
+          </label>
+        </div>
+        <span id="status" class="small text-body-secondary"></span>
+      </div>
+
+      <div id="results-panel">
+        <div class="tabs-bar d-flex align-items-end gap-2">
+          <ul class="nav nav-tabs flex-grow-1" id="tabs">
+            <li class="nav-item"><button class="nav-link active" data-pane="pane-rendered">Rendered page</button></li>
+            <li class="nav-item"><button class="nav-link" data-pane="pane-config">Config</button></li>
+            <li class="nav-item"><button class="nav-link" data-pane="pane-generic">Generic view (no config)</button>
+            </li>
+            <li class="nav-item"><button class="nav-link" data-pane="pane-jsonld">Merge JSON-LD</button></li>
+            <li class="nav-item"><button class="nav-link" data-pane="pane-rdf">Merged JSON-LD (via RDF)</button></li>
+            <li class="nav-item"><button class="nav-link" data-pane="pane-turtle">Turtle (merged)</button></li>
+            <li class="nav-item"><button class="nav-link" data-pane="pane-nquads">N-Quads (tagged by source)</button>
+            </li>
+            <li class="nav-item"><button class="nav-link" data-pane="pane-report">Report</button></li>
+          </ul>
+          <button id="fullpage-button" class="btn btn-sm btn-outline-secondary mb-1 text-nowrap">Full page</button>
+        </div>
+
+        <div class="border border-top-0 p-3">
+          <div id="pane-rendered" class="pane">
+            <div id="rendered-note" class="small text-body-secondary mb-3">
+              The merged graph (Route 1) drawn by js/renderer.js following the Config tab. Press Merge.
+            </div>
+            <div id="output-rendered"></div>
+          </div>
+
+          <div id="pane-generic" class="pane d-none">
+            <div class="small text-body-secondary mb-3">
+              The same merged graph drawn with no configuration (js/generic-renderer.js). Compare with the Rendered page
+              tab.
+            </div>
+            <div id="output-generic"></div>
+          </div>
+
+          <div id="pane-config" class="pane d-none">
+            <div class="small text-body-secondary mb-2">
+              Display configuration (config/work.json). Change the order or remove a field, then press Apply config. No
+              code changes.
+            </div>
+            <button id="apply-config-button" class="btn btn-sm btn-primary mb-2">Apply config</button>
+            <textarea id="config-text" class="form-control" rows="24" spellcheck="false"></textarea>
+          </div>
+
+          <div id="pane-jsonld" class="pane d-none">
+            <div id="jsonld-note" class="small text-body-secondary mb-2">
+              Route 1: merged with jsonld.js only (js/merge-jsonld.js). Press Merge.
+            </div>
+            <button class="btn btn-sm btn-outline-secondary mb-2 copy-button" data-target="output-jsonld">Copy</button>
+            <pre id="output-jsonld" class="mb-0"></pre>
+          </div>
+
+          <div id="pane-rdf" class="pane d-none">
+            <div class="small text-body-secondary mb-2">
+              Route 2: converted to RDF statements, combined, and converted back (js/merge-rdf.js).
+            </div>
+            <button class="btn btn-sm btn-outline-secondary mb-2 copy-button" data-target="output-rdf">Copy</button>
+            <pre id="output-rdf" class="mb-0"></pre>
+          </div>
+
+          <div id="pane-turtle" class="pane d-none">
+            <div class="small text-body-secondary mb-2">
+              The merged statements as Turtle. Same content as the previous tab; Turtle has no place to record the
+              source file.
+            </div>
+            <button class="btn btn-sm btn-outline-secondary mb-2 copy-button" data-target="output-turtle">Copy</button>
+            <pre id="output-turtle" class="mb-0"></pre>
+          </div>
+
+          <div id="pane-nquads" class="pane d-none">
+            <div class="small text-body-secondary mb-2">
+              Each line is one statement. The last item, such as &lt;urn:source:rism&gt;, says which input box it came
+              from:
+              rism = box A, suppa = box B. A statement present in both appears twice here (marked) and once in the
+              merged output.
+            </div>
+            <button class="btn btn-sm btn-outline-secondary mb-2 copy-button" data-target="output-nquads">Copy</button>
+            <pre id="output-nquads" class="mb-0"></pre>
+          </div>
+
+          <div id="pane-report" class="pane d-none">
+            <div id="output-report">Press Report.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Libraries (minified, from npm) -->
+    <script src="vendor/jsonld.min.js"></script>
+    <script src="vendor/n3.min.js"></script>
+
+    <!-- Data used by the demo -->
+    <script src="data/contexts.js"></script>
+    <script src="data/samples.js"></script>
+    <script src="data/configs.js"></script>
+
+    <!-- Our code -->
+    <script src="js/merge-shared.js"></script>
+    <script src="js/merge-jsonld.js"></script>
+    <script src="js/merge-rdf.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/generic-renderer.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>

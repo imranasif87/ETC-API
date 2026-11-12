@@ -20,40 +20,42 @@
       "@id": "dcterms:modified",
       "@type": "xsd:dateTime"
     },
+    "etcIdentifier": {
+      "@id": "suppa:etcIdentifier"
+    },
     "derivedFrom": {
       "@id": "prov:wasDerivedFrom",
       "@type": "@id"
     },
-    "etcIdentifier": {
-      "@id": "suppa:etcIdentifier"
+    "relatedTo": {
+      "@id": "dcterms:relation",
+      "@type": "@id"
     },
-    "relationships": {
-      "@id": "suppa:relationships",
-      "@type": "@id",
-      "@context": {
-        "items": {
-          "@id": "suppa:hasRelationship",
-          "@container": "@set"
-        },
-        "role": {
-          "@id": "suppa:hasRole",
-          "@type": "@vocab"
-        },
-        "qualifier": {
-          "@id": "suppa:hasQualifier",
-          "@type": "@vocab"
-        },
-        "relatedTo": {
-          "@id": "dcterms:relation",
-          "@type": "@id"
-        },
-        "note": {
-          "@id": "rdfs:comment"
-        },
-        "migrationStatus": {
-          "@id": "suppa:migrationStatus"
-        }
-      }
+    "label": {
+      "@id": "rdfs:label"
+    },
+    "date": {
+      "@id": "dcterms:date"
+    },
+    "citation": {
+      "@id": "dcterms:bibliographicCitation"
+    },
+    "place": {
+      "@id": "suppa:place",
+      "@type": "@id"
+    },
+    "format": {
+      "@id": "suppa:format",
+      "@type": "@vocab"
+    },
+    "title": {
+      "@id": "dcterms:title"
+    },
+    "instrumentation": {
+      "@id": "suppa:instrumentation"
+    },
+    "key": {
+      "@id": "suppa:key"
     },
     "parts": {
       "@id": "suppa:parts",
@@ -61,13 +63,7 @@
       "@context": {
         "items": {
           "@id": "suppa:hasPart",
-          "@container": "@set",
-          "@context": {
-            "relatedTo": {
-              "@id": "dcterms:relation",
-              "@type": "@id"
-            }
-          }
+          "@container": "@set"
         }
       }
     },
@@ -78,10 +74,6 @@
         "items": {
           "@id": "suppa:hasTheme",
           "@container": "@set"
-        },
-        "relatedTo": {
-          "@id": "dcterms:relation",
-          "@type": "@id"
         }
       }
     },
@@ -91,8 +83,7 @@
       "@context": {
         "items": {
           "@id": "suppa:hasDedicatee",
-          "@container": "@set",
-          "@type": "@id"
+          "@container": "@set"
         }
       }
     },
@@ -126,9 +117,6 @@
         "items": {
           "@id": "suppa:hasLiteratureReference",
           "@container": "@set"
-        },
-        "citation": {
-          "@id": "dcterms:bibliographicCitation"
         }
       }
     },

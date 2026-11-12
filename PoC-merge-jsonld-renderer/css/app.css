@@ -1,0 +1,46 @@
+textarea,
+pre {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.78rem;
+}
+
+pre {
+  max-height: 62vh;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.report-detail {
+  white-space: pre-line;
+}
+
+/* Full page mode: the results panel covers the whole window so a result can be read at full size. */
+body.fullpage-open {
+  overflow: hidden;
+}
+
+body.fullpage-open #results-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  overflow: auto;
+  padding: 0 1rem 1rem;
+  background: var(--bs-body-bg);
+}
+
+body.fullpage-open .tabs-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-top: 0.75rem;
+  background: var(--bs-body-bg);
+}
+
+body.fullpage-open pre {
+  max-height: none;
+}
+
+body.fullpage-open #config-text {
+  height: 75vh;
+}

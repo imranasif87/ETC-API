@@ -1,0 +1,110 @@
+{
+  "configVersion": 1,
+  "description": "Display configuration for Work records. Fields appear in the order listed. Paths use prefixed names from the merged graph, separated by '/'. termLabels gives labels to coded terms that the data does not label itself.",
+  "appliesTo": "rism:Work",
+  "languages": ["en", "de", "fr", "it", "es", "pt", "pl"],
+  "termLabels": {
+    "etcrel:author": "Author",
+    "etcrel:recipient": "Recipient",
+    "etcrel:place": "Place",
+    "etcrel:work": "Related work"
+  },
+  "unmapped": {
+    "show": false,
+    "title": "Other data",
+    "hide": ["prov:wasDerivedFrom", "rism:hasKeyMode", "dcterms:created", "dcterms:modified"]
+  },
+  "sections": [
+    {
+      "id": "rism",
+      "title": null,
+      "description": "The RISM record, in the order of the existing catalogue page.",
+      "fields": [
+        { "id": "title", "kind": "title", "labelFrom": "rdfs:label",
+          "description": "Heading: the record label, linking to the record's own IRI." },
+
+        { "id": "creator", "kind": "row",
+          "labelFrom": "dcterms:creator/rism:hasRole/rdfs:label",
+          "valueFrom": "dcterms:creator/dcterms:relation", "display": "link" },
+
+        { "id": "summary", "kind": "rows",
+          "description": "RISM summary rows carry their own labels. 'order' sorts them by English label; rows not listed are appended.",
+          "itemsFrom": "rism:hasSummary", "labelFrom": "rdfs:label", "valueFrom": "rdf:value",
+          "order": ["Opus number", "Key or mode", "Scoring summary", "Text incipit", "Standardized title", "Dates", "RISM ID number"],
+          "unlisted": "append" },
+
+        { "id": "partOf", "kind": "row",
+          "labelFrom": "rism:partOf/rdfs:label", "itemsFrom": "rism:partOf/rism:isPartOf",
+          "valueFrom": "dcterms:relation", "display": "link", "suffixFrom": "rism:hasWorkNumber" },
+
+        { "id": "createdOn", "kind": "row",
+          "labelFrom": "rism:recordHistory/dcterms:created/rdfs:label",
+          "valueFrom": "rism:recordHistory/dcterms:created/rdf:value" },
+
+        { "id": "lastModified", "kind": "row",
+          "labelFrom": "rism:recordHistory/dcterms:modified/rdfs:label",
+          "valueFrom": "rism:recordHistory/dcterms:modified/rdf:value" },
+
+        { "id": "incipits", "kind": "cards",
+          "headingFrom": "rism:incipits/rism:sectionLabel",
+          "itemsFrom": "rism:incipits/rism:hasIncipit", "titleFrom": "rdfs:label",
+          "fields": [
+            { "kind": "rows", "itemsFrom": "rism:hasSummary", "labelFrom": "rdfs:label", "valueFrom": "rdf:value" }
+          ] },
+
+        { "id": "formOfWork", "kind": "row",
+          "labelFrom": "rism:formOfWork/rism:sectionLabel", "itemsFrom": "rism:formOfWork/rism:hasFormOfWork",
+          "valueFrom": ".", "display": "link" },
+
+        { "id": "referencesNotes", "kind": "rows",
+          "headingFrom": "rism:referencesNotes/rism:sectionLabel",
+          "itemsFrom": "rism:referencesNotes/rism:hasNote",
+          "labelFrom": "rdfs:label", "valueFrom": "rdf:value", "display": "html" },
+
+        { "id": "relations", "kind": "rows",
+          "headingFrom": "rism:relationships/rism:sectionLabel",
+          "itemsFrom": "rism:relationships/rism:hasRelationship",
+          "labelFrom": "rism:hasRole/rdfs:label", "valueFrom": "dcterms:relation", "display": "link" }
+      ]
+    },
+    {
+      "id": "supplementary",
+      "title": "Supplementary data",
+      "description": "Data that is not in RISM. Labels are written here because the supplementary data does not carry any.",
+      "fields": [
+        { "id": "etcIdentifier", "kind": "row", "label": "ETC identifier", "valueFrom": "suppa:etcIdentifier" },
+
+        { "id": "suppaRelationships", "kind": "rows", "heading": "Relationships",
+          "itemsFrom": "suppa:relationships/suppa:hasRelationship",
+          "labelFrom": "suppa:hasRole", "valueFrom": ["dcterms:relation", "rdfs:comment"], "display": "link" },
+
+        { "id": "themes", "kind": "row", "label": "Themes",
+          "itemsFrom": "suppa:themes/suppa:hasTheme", "valueFrom": "suppa:label", "linkFrom": "dcterms:relation" },
+
+        { "id": "dedicatees", "kind": "row", "label": "Dedicatees",
+          "itemsFrom": "suppa:dedicatees/suppa:hasDedicatee", "valueFrom": "suppa:relatedTo", "display": "link" },
+
+        { "id": "textSource", "kind": "row", "label": "Text source", "valueFrom": "suppa:textSource" },
+
+        { "id": "events", "kind": "cards", "heading": "Events",
+          "itemsFrom": "suppa:events/suppa:hasEvent", "titleFrom": "@type",
+          "fields": [
+            { "kind": "row", "label": "Date", "valueFrom": "suppa:date" },
+            { "kind": "row", "label": "Place", "valueFrom": "suppa:place", "display": "link" }
+          ] },
+
+        { "id": "documents", "kind": "cards", "heading": "Documents",
+          "itemsFrom": "suppa:documents/suppa:hasDocument", "titleFrom": "suppa:format",
+          "fields": [
+            { "kind": "row", "label": "Date", "valueFrom": "suppa:date" },
+            { "kind": "row", "label": "Record", "valueFrom": "suppa:relatedTo", "display": "link" }
+          ] },
+
+        { "id": "literature", "kind": "row", "label": "Literature",
+          "itemsFrom": "suppa:literature/suppa:hasLiteratureReference", "valueFrom": "dcterms:bibliographicCitation" },
+
+        { "id": "notes", "kind": "row", "label": "Notes", "valueFrom": "rdfs:comment" }
+      ]
+    }
+  ]
+}

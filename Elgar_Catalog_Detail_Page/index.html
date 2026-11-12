@@ -1,0 +1,198 @@
+<!-- <html lang="en" data-mode="dark" style="color-scheme: dark;"> -->
+<html lang="en" data-mode="light" style="color-scheme: light;">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detail Page</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.42.0/dist/tabler-icons.min.css" media="all"
+            onload="this.media='all'">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <!-- Pre-defined SVG markers — available to all SVGs via url(#arrow) -->
+        <svg style="position:absolute;width:0;height:0" aria-hidden="true">
+            <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+                    orient="auto-start-reverse">
+                    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </marker>
+            </defs>
+        </svg>
+        <div id="vis-container">
+            <section class="hero is-primary">
+                <div class="hero-body">
+                    <div class="container">
+                        <div class="level">
+                            <div class="level-left">
+                                <span style="margin-left: 5%;" class="is-hidden-mobile">Catalog of the Works of
+                                    Francesco Pollini (AndP)</span>
+                            </div>
+                            <div class="level-right">
+                                <img src="images/logo-square-small.png" class="is-hidden-mobile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                            data-target="navMenu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu" id="navMenu">
+                        <div class="navbar-start">
+                            <a href="#" class="navbar-item ">
+                                Home
+                            </a>
+                            <a href="#" class="navbar-item ">
+                                Introduction
+                            </a>
+                            <a href="#" class="navbar-item ">
+                                Works
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div
+                style="display:flex; gap:0; border:0.5px solid var(--border); border-radius:12px; overflow:hidden; min-height:100vh;">
+
+                <div
+                    style="width:210px; flex-shrink:0; background:var(--surface-1); border-right:0.5px solid var(--border); padding:12px 0;">
+                    <div id="nav-list">
+
+                    </div>
+                </div>
+
+                <div style="flex:1; padding:1.25rem 1.5rem; background:var(--surface-2);">
+                    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:1rem;">
+                        <div>
+                            <div style="font-size:12px; color:var(--text-muted);" id="section-eyebrow">Work</div>
+                            <div style="font-size:18px; font-weight:500;" id="section-title">Sea slumber song</div>
+                        </div>
+                        <div style="font-size:12px; color:var(--text-muted);">API calls so far: <span id="call-count"
+                                style="font-weight:500; color:var(--text-primary);">1</span></div>
+                    </div>
+                    <div id="content-area">
+                        <div
+                            style="display:flex; padding:8px 0; border-bottom:0.5px solid var(--border); font-size:14px;">
+                            <div style="width:140px; color:var(--text-secondary);">Opus</div>
+                            <div>Op. 37, No. 1</div>
+                        </div>
+                        <div
+                            style="display:flex; padding:8px 0; border-bottom:0.5px solid var(--border); font-size:14px;">
+                            <div style="width:140px; color:var(--text-secondary);">Key</div>
+                            <div>E minor</div>
+                        </div>
+                        <div
+                            style="display:flex; padding:8px 0; border-bottom:0.5px solid var(--border); font-size:14px;">
+                            <div style="width:140px; color:var(--text-secondary);">Scoring</div>
+                            <div>Voice, piano</div>
+                        </div>
+                        <div style="margin-top:12px; font-size:12px; color:var(--text-muted);">Served from cache — no
+                            new API call.</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script data-executed="">
+                const sections = [
+                    { key: "work", icon: "ti-music", label: "Work", eyebrow: "Work", title: "Sea slumber song", fields: [["Opus", "Op. 37, No. 1"], ["Key", "E minor"], ["Scoring", "Voice, piano"]] },
+                    { key: "sources", icon: "ti-book", label: "Sources", eyebrow: "Sources", title: "Sources for this work", fields: [["Source 1", "Manuscript"], ["Source 2", "Printed edition"]] },
+                    { key: "people", icon: "ti-users", label: "People", eyebrow: "Related people", title: "Roden Noel, Edward Elgar", fields: [["Composer", "Edward Elgar"], ["Lyricist", "Roden Noel"]] },
+                    { key: "postcards", icon: "ti-mail", label: "Postcards", eyebrow: "Correspondence", title: "3 postcards mention this work", fields: [["1899-06-02", "Elgar to Jaeger"], ["1899-09-14", "Alice Elgar to publisher"]] },
+                    { key: "recordings", icon: "ti-disc", label: "Recordings", eyebrow: "Recordings", title: "2 recordings on file", fields: [["1922", "Elgar, cond. (HMV)"], ["1968", "Baker, Barbirolli"]] },
+                    { key: "performances", icon: "ti-calendar-event", label: "Performances", eyebrow: "Performance history", title: "Norwich festival premiere", fields: [["1899-10-05", "Norwich, cond. Elgar"]] },
+                    { key: "places", icon: "ti-map-pin", label: "Places", eyebrow: "Places", title: "Places associated", fields: [["Norwich", "Premiere venue"], ["Malvern", "Composed here"]] },
+                    { key: "dedicatees", icon: "ti-heart", label: "Dedicatees", eyebrow: "Dedication", title: "Clara Butt", fields: [["Dedicatee", "Clara Butt"], ["Status", "Unconfirmed"]] }
+                ];
+
+                const state = {};
+                sections.forEach(s => state[s.key] = "idle");
+                let callCount = 1;
+                let active = "work";
+                state.work = "cached";
+
+                function renderNav() {
+                    const nav = document.getElementById("nav-list");
+                    nav.innerHTML = "";
+                    sections.forEach(s => {
+                        const row = document.createElement("div");
+                        row.style.cssText = "display:flex; align-items:center; gap:10px; padding:9px 16px; cursor:pointer; font-size:14px;" + (s.key === active ? " background:var(--fill-ghost-selected); font-weight:500;" : "");
+                        row.onmouseenter = () => { if (s.key !== active) row.style.background = "var(--fill-ghost-hover)"; };
+                        row.onmouseleave = () => { if (s.key !== active) row.style.background = "transparent"; };
+                        row.innerHTML =
+                            '<i class="ti ' + s.icon + '" style="font-size:17px; color:var(--text-secondary);" aria-hidden="true"></i>' +
+                            '<span style="flex:1;">' + s.label + '</span>' +
+                            dot(state[s.key]);
+                        row.onclick = () => selectSection(s.key);
+                        nav.appendChild(row);
+                    });
+                }
+
+                function dot(status) {
+                    if (status === "cached") return '<span title="Cached" style="width:7px; height:7px; border-radius:50%; background:var(--fill-success);"></span>';
+                    if (status === "loading") return '<span title="Loading" style="width:7px; height:7px; border-radius:50%; background:var(--fill-warning);"></span>';
+                    return '<span title="Not loaded" style="width:7px; height:7px; border-radius:50%; border:1px solid var(--border-strong);"></span>';
+                }
+
+                function renderContent(section, loading) {
+                    const area = document.getElementById("content-area");
+                    document.getElementById("section-eyebrow").textContent = section.eyebrow;
+                    document.getElementById("section-title").textContent = loading ? "Loading\u2026" : section.title;
+                    if (loading) {
+                        area.innerHTML = '<div style="height:14px; width:60%; background:var(--surface-1); border-radius:4px; margin-bottom:10px;"></div><div style="height:14px; width:40%; background:var(--surface-1); border-radius:4px;"></div>';
+                        return;
+                    }
+                    area.innerHTML = section.fields.map(f =>
+                        '<div style="display:flex; padding:8px 0; border-bottom:0.5px solid var(--border); font-size:14px;">' +
+                        '<div style="width:140px; color:var(--text-secondary);">' + f[0] + '</div>' +
+                        '<div>' + f[1] + '</div>' +
+                        '</div>'
+                    ).join("") +
+                        '<div style="margin-top:12px; font-size:12px; color:var(--text-muted);">' +
+                        (state[section.key] === "cached" && !loading ? "Served from cache \u2014 no new API call." : "") +
+                        '</div>';
+                }
+
+                function selectSection(key) {
+                    active = key;
+                    const section = sections.find(s => s.key === key);
+                    renderNav();
+
+                    if (state[key] === "cached") {
+                        renderContent(section, false);
+                        return;
+                    }
+
+                    state[key] = "loading";
+                    renderNav();
+                    renderContent(section, true);
+
+                    setTimeout(() => {
+                        state[key] = "cached";
+                        callCount += 1;
+                        document.getElementById("call-count").textContent = callCount;
+                        renderNav();
+                        renderContent(section, false);
+                    }, 500);
+                }
+
+                renderNav();
+                renderContent(sections[0], false);
+            </script>
+        </div>
+
+    </body>
+
+</html>
