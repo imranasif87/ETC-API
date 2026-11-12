@@ -1,23 +1,39 @@
 {
   "@context": "https://imranasif87.github.io/ETC-API/api/v1/work.json",
-  "id": "https://imranasif87.github.io/ETC-API/api/v1/works/etc-0001.json",
+  "id": "https://rism.online/works/51461",
   "type": "suppa:Work",
-  "derivedFrom": "https://rism.online/works/51461",
-  "etcIdentifier": "ETC-0001",
   "parts": {
     "items": [
       {
         "title": "Vocal score",
-        "instrumentation": "Chorus and piano",
+        "instrumentation": { "label": "Scoring summary", "value": "Coro, pf" },
         "key": "G major",
         "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/works/etc-0002.json"
       }
     ]
   },
-  "dedicatees": {
+  "relationships": {
+    "id": "https://rism.online/works/51461/relationships",
+    "sectionLabel": {
+      "en": [
+        "Relations"
+      ]
+    },
     "items": [
       {
-        "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/people/51041597.json"
+        "role": {
+          "id": "http://id.loc.gov/vocabulary/relators/dte",
+          "label": {
+            "en": [
+              "Dedicatee"
+            ]
+          },
+          "value": "dte"
+        },
+        "relatedTo": {
+          "id": "https://imranasif87.github.io/ETC-API/api/v1/people/51041597.json",
+          "type": "rism:Person"
+        }
       }
     ]
   },
@@ -25,56 +41,26 @@
   "events": {
     "items": [
       {
-        "type": "etcrel:composition",
-        "place": "https://imranasif87.github.io/ETC-API/api/v1/places/etc-place-0001.json",
-        "date": "1889/1893"
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/etc-perf-0001.json"
       },
       {
-        "type": "etcrel:premiere",
-        "place": "https://imranasif87.github.io/ETC-API/api/v1/places/etc-place-0002.json",
-        "date": "1893-04-18",
-        "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/performances/etc-perf-0001.json"
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/etc-perf-0002.json"
       },
       {
-        "type": "etcrel:revival",
-        "place": "https://imranasif87.github.io/ETC-API/api/v1/places/etc-place-0003.json",
-        "date": "1900-03-22",
-        "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/performances/etc-perf-0002.json"
-      },
-      {
-        "type": "etcrel:recording",
-        "place": "https://imranasif87.github.io/ETC-API/api/v1/places/etc-place-0004.json",
-        "date": "1931-06-14",
-        "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/recordings/etc-rec-0001.json"
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/etc-rec-0001.json"
       }
     ]
   },
   "documents": {
     "items": [
       {
-        "format": "etcrel:letter",
-        "date": "1893-03-02",
-        "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/etc-0001.json"
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/etc-0001.json"
       },
       {
-        "format": "etcrel:letter",
-        "date": "1893-03-20",
-        "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/etc-0002.json"
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/etc-0002.json"
       },
       {
-        "format": "etcrel:postcard",
-        "date": "1893-04-10",
-        "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/postcards/etc-pc-0001.json"
-      }
-    ]
-  },
-  "literature": {
-    "items": [
-      {
-        "citation": "Kennedy, Michael. 1968. Portrait of Elgar. London: Oxford University Press."
-      },
-      {
-        "citation": "Kent, Christopher. 2013. Edward Elgar: A Thematic Catalogue and Research Guide. New York; London: Routledge."
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/etc-pc-0001.json"
       }
     ]
   },
