@@ -5,7 +5,7 @@
   "parts": {
     "items": [
       {
-        "title": "Vocal score",
+        "title": "The Black Knight",
         "instrumentation": { "label": "Scoring summary", "value": "Coro, pf" },
         "key": "G major",
         "relatedTo": "https://imranasif87.github.io/ETC-API/api/v1/works/etc-0002.json"
