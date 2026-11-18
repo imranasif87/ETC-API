@@ -11,23 +11,29 @@
   "venue": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0003.json",
   "occasion": "Choral society concert",
   "worksPerformed": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#worksPerformed",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#worksPerformed-1",
         "relatedTo": "https://rism.online/works/51461",
         "programmePosition": 2
       }
     ]
   },
   "ensembles": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#ensembles",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#ensembles-1",
         "label": "Birmingham choral society (placeholder)"
       }
     ]
   },
   "participants": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#participants",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#participants-1",
         "relatedTo": "https://rism.online/people/45128",
         "certainty": "etcrel:confirmed",
         "role": "etcrel:conductor"
@@ -35,8 +41,10 @@
     ]
   },
   "reviews": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#reviews",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#reviews-1",
         "citation": "Review in a Birmingham newspaper (placeholder citation).",
         "reviewer": "Unsigned"
       }

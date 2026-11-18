@@ -3,14 +3,18 @@
   "id": "https://rism.online/works/51461",
   "type": "suppa:Work",
   "parts": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#parts",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#part-1",
         "title": "The Black Knight",
         "instrumentation": {
+          "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#part-1-instrumentation",
           "label": "Scoring summary",
           "value": "Coro, pf"
         },
         "key": {
+          "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#part-1-key",
           "label": "Key or mode",
           "value": "G major"
         },
@@ -45,6 +49,7 @@
   },
   "textSource": "Henry Wadsworth Longfellow's English translation of Ludwig Uhland's poem 'Der schwarze Ritter'",
   "events": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#events",
     "items": [
       {
         "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json"
@@ -58,6 +63,7 @@
     ]
   },
   "documents": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#documents",
     "items": [
       {
         "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json"

@@ -11,23 +11,29 @@
   "venue": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0002.json",
   "occasion": "Worcester Festival Choral Society concert",
   "worksPerformed": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#worksPerformed",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#worksPerformed-1",
         "relatedTo": "https://rism.online/works/51461",
         "programmePosition": 1
       }
     ]
   },
   "ensembles": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#ensembles",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#ensembles-1",
         "label": "Worcester Festival Choral Society and orchestra"
       }
     ]
   },
   "participants": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#participants",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#participants-1",
         "relatedTo": "https://rism.online/people/45128",
         "certainty": "etcrel:confirmed",
         "role": "etcrel:conductor"

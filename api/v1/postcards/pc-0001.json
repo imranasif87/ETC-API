@@ -5,13 +5,16 @@
   "etcIdentifier": "ETC 1",
   "label": "Postcard from Edward Elgar to Hugh Blair, 10 April 1893",
   "images": {
+     "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#images",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#images-1",
         "side": "etcrel:front",
         "uri": "https://example.org/images/pc-1-7-front",
         "linkLabel": "Front (picture)"
       },
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#images-2",
         "side": "etcrel:back",
         "uri": "https://example.org/images/pc-1-7-back",
         "linkLabel": "Back (message)"
@@ -19,16 +22,20 @@
     ]
   },
   "senders": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#senders",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#senders-1",
         "relatedTo": "https://rism.online/people/45128",
         "certainty": "etcrel:confirmed"
       }
     ]
   },
   "recipients": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#recipients",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#recipients-1",
         "relatedTo": "https://rism.online/people/51041597",
         "certainty": "etcrel:confirmed"
       }
@@ -41,13 +48,16 @@
   "transcription": "Rehearsal moved to Thursday. E.E.",
   "language": "en",
   "worksMentioned": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#worksMentioned",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#worksMentioned-1",
         "relatedTo": "https://rism.online/works/51461"
       }
     ]
   },
   "itemLocation": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#itemLocation",
     "repositoryName": "Example Archive",
     "shelfmark": "PC 1/7",
     "uri": "https://example.org/archive/pc-1-7",

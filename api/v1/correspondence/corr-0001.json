@@ -6,16 +6,20 @@
   "label": "Letter from Edward Elgar to Hugh Blair, 2 March 1893",
   "referenceType": "etcrel:letter",
   "authors": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#authors",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#authors-1",
         "relatedTo": "https://rism.online/people/45128",
         "certainty": "etcrel:confirmed"
       }
     ]
   },
   "recipients": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#recipients",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#recipients-1",
         "relatedTo": "https://rism.online/people/51041597",
         "certainty": "etcrel:confirmed"
       }
@@ -27,8 +31,10 @@
   "dateCertainty": "etcrel:confirmed",
   "placeWritten": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0001.json",
   "worksMentioned": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#worksMentioned",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#worksMentioned-1",
         "relatedTo": "https://rism.online/works/51461",
         "note": "Discusses rehearsals."
       }
@@ -36,6 +42,7 @@
   },
   "summary": "Arrangements for choir rehearsals (placeholder).",
   "itemLocation": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#itemLocation",
     "repositoryName": "Example Archive",
     "rismSiglum": "GB-Ex",
     "shelfmark": "MS 1/2",
@@ -44,15 +51,19 @@
   },
   "transcription": "Dear Blair, ... (placeholder transcription)",
   "printedReproductions": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#printedReproductions",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#printedReproductions-1",
         "citation": "Example, A. (ed.). 1990. Elgar Letters. Oxford: Example Press, letter no. 1."
       }
     ]
   },
   "digitalResources": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#digitalResources",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#digitalResources-1",
         "uri": "https://example.org/digitised/ms-1-2",
         "linkLabel": "Digitised manuscript",
         "kind": "etcrel:image"

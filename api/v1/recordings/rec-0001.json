@@ -12,8 +12,10 @@
   "dateCertainty": "etcrel:possible",
   "recordingPlace": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0004.json",
   "worksRecorded": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#worksRecorded",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#worksRecorded-1",
         "relatedTo": "https://rism.online/works/51461",
         "movements": "Excerpt"
       }
@@ -21,8 +23,10 @@
   },
   "elgarInvolvement": "etcrel:conductor",
   "performers": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#performers",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#performers-1",
         "relatedTo": "https://rism.online/people/45128",
         "certainty": "etcrel:confirmed",
         "role": "etcrel:conductor"
@@ -30,8 +34,10 @@
     ]
   },
   "issues": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#issues",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#issues-1",
         "recordLabel": "Example Records",
         "catalogueNumber": "EX 1234",
         "format": "etcrel:disc78",
@@ -40,8 +46,10 @@
     ]
   },
   "audioAccess": {
+    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#audioAccess",
     "items": [
       {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#audioAccess-1",
         "uri": "https://archive.org/details/example-black-knight-excerpt",
         "linkLabel": "Listen on archive.org (placeholder link)",
         "rightsNote": "Rights not checked (placeholder)."
