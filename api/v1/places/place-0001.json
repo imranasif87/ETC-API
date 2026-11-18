@@ -1,0 +1,14 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/place.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0001.json",
+  "type": "suppa:Place",
+  "etcIdentifier": "ETC 1",
+  "placeName": "Malvern",
+  "placeType": "etcrel:town",
+  "cityTown": "Malvern",
+  "country": "United Kingdom",
+  "currentStatus": "etcrel:extant",
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

@@ -1,0 +1,54 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/recording.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json",
+  "type": "suppa:Recording",
+  "etcIdentifier": "ETC 1",
+  "label": "The Black Knight (excerpt), Example Records EX 1234",
+  "charmRecordingId": "CHARM-PLACEHOLDER",
+  "matrixNumber": "Cc 0000-1",
+  "takeNumber": "1",
+  "recordingDate": "1931-06-14",
+  "datePrecision": "etcrel:day",
+  "dateCertainty": "etcrel:possible",
+  "recordingPlace": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0004.json",
+  "worksRecorded": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/works/51461",
+        "movements": "Excerpt"
+      }
+    ]
+  },
+  "elgarInvolvement": "etcrel:conductor",
+  "performers": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/45128",
+        "certainty": "etcrel:confirmed",
+        "role": "etcrel:conductor"
+      }
+    ]
+  },
+  "issues": {
+    "items": [
+      {
+        "recordLabel": "Example Records",
+        "catalogueNumber": "EX 1234",
+        "format": "etcrel:disc78",
+        "issueDate": "1931-10"
+      }
+    ]
+  },
+  "audioAccess": {
+    "items": [
+      {
+        "uri": "https://archive.org/details/example-black-knight-excerpt",
+        "linkLabel": "Listen on archive.org (placeholder link)",
+        "rightsNote": "Rights not checked (placeholder)."
+      }
+    ]
+  },
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

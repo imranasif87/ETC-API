@@ -1,1 +1,189 @@
-{}
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+        "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "type": "@type",
+        "id": "@id",
+        "created": {
+            "@id": "dcterms:created",
+            "@type": "xsd:dateTime"
+        },
+        "updated": {
+            "@id": "dcterms:modified",
+            "@type": "xsd:dateTime"
+        },
+        "etcIdentifier": {
+            "@id": "suppa:etcIdentifier"
+        },
+        "label": {
+            "@id": "rdfs:label"
+        },
+        "relatedTo": {
+            "@id": "dcterms:relation",
+            "@type": "@id"
+        },
+        "certainty": {
+            "@id": "suppa:certainty",
+            "@type": "@vocab"
+        },
+        "uri": {
+            "@id": "suppa:uri",
+            "@type": "@id"
+        },
+        "linkLabel": {
+            "@id": "suppa:linkLabel"
+        },
+        "citation": {
+            "@id": "dcterms:bibliographicCitation"
+        },
+        "note": {
+            "@id": "rdfs:comment"
+        },
+        "charmRecordingId": {
+            "@id": "suppa:charmRecordingId"
+        },
+        "matrixNumber": {
+            "@id": "suppa:matrixNumber"
+        },
+        "takeNumber": {
+            "@id": "suppa:takeNumber"
+        },
+        "recordingDate": {
+            "@id": "suppa:recordingDate"
+        },
+        "datePrecision": {
+            "@id": "suppa:datePrecision",
+            "@type": "@vocab"
+        },
+        "dateCertainty": {
+            "@id": "suppa:dateCertainty",
+            "@type": "@vocab"
+        },
+        "recordingPlace": {
+            "@id": "suppa:recordingPlace",
+            "@type": "@id"
+        },
+        "movements": {
+            "@id": "suppa:movements"
+        },
+        "take": {
+            "@id": "suppa:take"
+        },
+        "worksRecorded": {
+            "@id": "suppa:worksRecorded",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasWorkRecorded",
+                    "@container": "@set"
+                }
+            }
+        },
+        "elgarInvolvement": {
+            "@id": "suppa:elgarInvolvement",
+            "@type": "@vocab"
+        },
+        "role": {
+            "@id": "suppa:hasRole",
+            "@type": "@vocab"
+        },
+        "performers": {
+            "@id": "suppa:performers",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasPerformer",
+                    "@container": "@set"
+                }
+            }
+        },
+        "ensembles": {
+            "@id": "suppa:ensembles",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasEnsemble",
+                    "@container": "@set"
+                }
+            }
+        },
+        "recordLabel": {
+            "@id": "suppa:recordLabel"
+        },
+        "catalogueNumber": {
+            "@id": "suppa:catalogueNumber"
+        },
+        "format": {
+            "@id": "suppa:format",
+            "@type": "@vocab"
+        },
+        "issueDate": {
+            "@id": "suppa:issueDate"
+        },
+        "reissueOf": {
+            "@id": "suppa:reissueOf",
+            "@type": "@id"
+        },
+        "issues": {
+            "@id": "suppa:issues",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasIssue",
+                    "@container": "@set"
+                }
+            }
+        },
+        "relatedPerformance": {
+            "@id": "suppa:relatedPerformance",
+            "@type": "@id"
+        },
+        "rightsNote": {
+            "@id": "suppa:rightsNote"
+        },
+        "accessNote": {
+            "@id": "suppa:accessNote"
+        },
+        "audioAccess": {
+            "@id": "suppa:audioAccess",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasAudioAccess",
+                    "@container": "@set"
+                }
+            }
+        },
+        "evidence": {
+            "@id": "suppa:evidence",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasEvidence",
+                    "@container": "@set"
+                }
+            }
+        },
+        "literature": {
+            "@id": "suppa:literature",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasLiteratureReference",
+                    "@container": "@set"
+                }
+            }
+        },
+        "notes": {
+            "@id": "rdfs:comment"
+        }
+    }
+}

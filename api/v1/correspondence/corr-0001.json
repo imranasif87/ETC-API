@@ -1,0 +1,65 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/correspondence.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json",
+  "type": "suppa:Correspondence",
+  "etcIdentifier": "ETC 1",
+  "label": "Letter from Edward Elgar to Hugh Blair, 2 March 1893",
+  "referenceType": "etcrel:letter",
+  "authors": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/45128",
+        "certainty": "etcrel:confirmed"
+      }
+    ]
+  },
+  "recipients": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/51041597",
+        "certainty": "etcrel:confirmed"
+      }
+    ]
+  },
+  "date": "1893-03-02",
+  "dateAsWritten": "2 Mar. 1893",
+  "datePrecision": "etcrel:day",
+  "dateCertainty": "etcrel:confirmed",
+  "placeWritten": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0001.json",
+  "worksMentioned": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/works/51461",
+        "note": "Discusses rehearsals."
+      }
+    ]
+  },
+  "summary": "Arrangements for choir rehearsals (placeholder).",
+  "itemLocation": {
+    "repositoryName": "Example Archive",
+    "rismSiglum": "GB-Ex",
+    "shelfmark": "MS 1/2",
+    "uri": "https://example.org/archive/ms-1-2",
+    "linkLabel": "Archive catalogue entry"
+  },
+  "transcription": "Dear Blair, ... (placeholder transcription)",
+  "printedReproductions": {
+    "items": [
+      {
+        "citation": "Example, A. (ed.). 1990. Elgar Letters. Oxford: Example Press, letter no. 1."
+      }
+    ]
+  },
+  "digitalResources": {
+    "items": [
+      {
+        "uri": "https://example.org/digitised/ms-1-2",
+        "linkLabel": "Digitised manuscript",
+        "kind": "etcrel:image"
+      }
+    ]
+  },
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

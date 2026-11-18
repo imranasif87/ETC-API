@@ -1,0 +1,17 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/place.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0003.json",
+  "type": "suppa:Place",
+  "etcIdentifier": "ETC 1",
+  "placeName": "Birmingham Town Hall",
+  "placeType": "etcrel:concertHall",
+  "cityTown": "Birmingham",
+  "country": "United Kingdom",
+  "latitude": "52.48",
+  "longitude": "-1.90",
+  "coordinatePrecision": "etcrel:approximate",
+  "currentStatus": "etcrel:extant",
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

@@ -1,0 +1,59 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/postcard.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json",
+  "type": "suppa:Postcard",
+  "etcIdentifier": "ETC 1",
+  "label": "Postcard from Edward Elgar to Hugh Blair, 10 April 1893",
+  "images": {
+    "items": [
+      {
+        "side": "etcrel:front",
+        "uri": "https://example.org/images/pc-1-7-front",
+        "linkLabel": "Front (picture)"
+      },
+      {
+        "side": "etcrel:back",
+        "uri": "https://example.org/images/pc-1-7-back",
+        "linkLabel": "Back (message)"
+      }
+    ]
+  },
+  "senders": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/45128",
+        "certainty": "etcrel:confirmed"
+      }
+    ]
+  },
+  "recipients": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/51041597",
+        "certainty": "etcrel:confirmed"
+      }
+    ]
+  },
+  "postmarkDate": "1893-04-10",
+  "postmarkLocation": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0001.json",
+  "depictedLocation": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0002.json",
+  "pictureDescription": "A view of the hall (placeholder).",
+  "transcription": "Rehearsal moved to Thursday. E.E.",
+  "language": "en",
+  "worksMentioned": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/works/51461"
+      }
+    ]
+  },
+  "itemLocation": {
+    "repositoryName": "Example Archive",
+    "shelfmark": "PC 1/7",
+    "uri": "https://example.org/archive/pc-1-7",
+    "linkLabel": "Archive catalogue entry"
+  },
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

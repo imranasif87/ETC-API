@@ -1,0 +1,46 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/correspondence.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json",
+  "type": "suppa:Correspondence",
+  "etcIdentifier": "ETC 1",
+  "label": "Letter from Hugh Blair to Edward Elgar, 20 March 1893",
+  "referenceType": "etcrel:letter",
+  "authors": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/51041597",
+        "certainty": "etcrel:confirmed"
+      }
+    ]
+  },
+  "recipients": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/45128",
+        "certainty": "etcrel:confirmed"
+      }
+    ]
+  },
+  "date": "1893-03-20",
+  "dateAsWritten": "20th March",
+  "datePrecision": "etcrel:day",
+  "dateCertainty": "etcrel:probable",
+  "worksMentioned": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/works/51461",
+        "note": "Replies about the chorus."
+      }
+    ]
+  },
+  "itemLocation": {
+    "repositoryName": "Example Library",
+    "rismSiglum": "GB-Ex2",
+    "shelfmark": "Add MS 100, f. 3",
+    "uri": "https://example.org/library/add-ms-100",
+    "linkLabel": "Library catalogue entry"
+  },
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

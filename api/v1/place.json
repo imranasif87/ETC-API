@@ -1,1 +1,129 @@
-{}
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+        "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "type": "@type",
+        "id": "@id",
+        "created": {
+            "@id": "dcterms:created",
+            "@type": "xsd:dateTime"
+        },
+        "updated": {
+            "@id": "dcterms:modified",
+            "@type": "xsd:dateTime"
+        },
+        "etcIdentifier": {
+            "@id": "suppa:etcIdentifier"
+        },
+        "derivedFrom": {
+            "@id": "prov:wasDerivedFrom",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "rdfs:label"
+        },
+        "uri": {
+            "@id": "suppa:uri",
+            "@type": "@id"
+        },
+        "linkLabel": {
+            "@id": "suppa:linkLabel"
+        },
+        "citation": {
+            "@id": "dcterms:bibliographicCitation"
+        },
+        "placeName": {
+            "@id": "rdfs:label"
+        },
+        "placeType": {
+            "@id": "suppa:placeType",
+            "@type": "@vocab"
+        },
+        "currentStatus": {
+            "@id": "suppa:currentStatus",
+            "@type": "@vocab"
+        },
+        "locatedWithin": {
+            "@id": "suppa:locatedWithin",
+            "@type": "@id"
+        },
+        "cityTown": {
+            "@id": "suppa:cityTown"
+        },
+        "country": {
+            "@id": "suppa:country"
+        },
+        "latitude": {
+            "@id": "suppa:latitude",
+            "@type": "xsd:decimal"
+        },
+        "longitude": {
+            "@id": "suppa:longitude",
+            "@type": "xsd:decimal"
+        },
+        "coordinatePrecision": {
+            "@id": "suppa:coordinatePrecision",
+            "@type": "@vocab"
+        },
+        "existenceDates": {
+            "@id": "suppa:existenceDates"
+        },
+        "relevantDates": {
+            "@id": "suppa:relevantDates"
+        },
+        "gettyTgnId": {
+            "@id": "suppa:gettyTgnId"
+        },
+        "wikidataQid": {
+            "@id": "suppa:wikidataQid"
+        },
+        "category": {
+            "@id": "suppa:nameCategory",
+            "@type": "@vocab"
+        },
+        "caption": {
+            "@id": "suppa:caption"
+        },
+        "alternativeNames": {
+            "@id": "suppa:alternativeNames",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasAlternativeName",
+                    "@container": "@set"
+                }
+            }
+        },
+        "images": {
+            "@id": "suppa:images",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasImage",
+                    "@container": "@set"
+                }
+            }
+        },
+        "literature": {
+            "@id": "suppa:literature",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasLiteratureReference",
+                    "@container": "@set"
+                }
+            }
+        },
+        "notes": {
+            "@id": "rdfs:comment"
+        }
+    }
+}

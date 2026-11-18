@@ -1,0 +1,499 @@
+{
+    "@context": [
+        "https://rism.online/api/v1/work.json",
+        "https://imranasif87.github.io/ETC-API/api/v1/work.json"
+    ],
+    "id": "https://rism.online/works/51461",
+    "type": [
+        "rism:Work",
+        "suppa:Work"
+    ],
+    "label": {
+        "en": [
+            "The black knight–G major, ETC 1"
+        ]
+    },
+    "typeLabel": {
+        "en": [
+            "Work"
+        ]
+    },
+    "creator": {
+        "role": {
+            "id": "http://id.loc.gov/vocabulary/relators/cre",
+            "label": {
+                "en": [
+                    "Composer/Author"
+                ]
+            },
+            "value": "cre"
+        },
+        "relatedTo": {
+            "id": "https://rism.online/people/45128",
+            "label": {
+                "none": [
+                    "Elgar, Edward (1857-1934)"
+                ]
+            },
+            "type": "rism:Person"
+        }
+    },
+    "summary": [
+        {
+            "label": {
+                "en": [
+                    "Opus number"
+                ]
+            },
+            "value": {
+                "none": [
+                    "op. 25"
+                ]
+            },
+            "type": [
+                "dcterms:identifier",
+                "pmo:OpusNumberStatement"
+            ]
+        },
+        {
+            "label": {
+                "en": [
+                    "Key or mode"
+                ]
+            },
+            "value": {
+                "en": [
+                    "G major"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Scoring summary"
+                ]
+            },
+            "value": {
+                "none": [
+                    "Coro, orch"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Text incipit"
+                ]
+            },
+            "value": {
+                "none": [
+                    "'Twas Pentecost, the Feast of Gladness"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Standardized title"
+                ]
+            },
+            "value": {
+                "none": [
+                    "The black knight"
+                ]
+            },
+            "type": [
+                "dcterms:title",
+                "rism:StandardizedTitle"
+            ]
+        },
+        {
+            "label": {
+                "en": [
+                    "Dates"
+                ]
+            },
+            "value": {
+                "none": [
+                    "1893 (1889-1893)"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "RISM ID number"
+                ]
+            },
+            "value": {
+                "none": [
+                    "works/51461"
+                ]
+            }
+        }
+    ],
+    "partOf": {
+        "label": {
+            "en": [
+                "Item part of"
+            ]
+        },
+        "type": "rism:PartOfSection",
+        "items": [
+            {
+                "relationshipType": "rism:PrimaryPartOf",
+                "relatedTo": {
+                    "id": "https://rism.online/publications/51004623",
+                    "label": {
+                        "none": [
+                            "Elgar Thematic Catalogue"
+                        ]
+                    },
+                    "type": "rism:Publication",
+                    "typeLabel": {
+                        "en": [
+                            "Work catalog"
+                        ]
+                    },
+                    "status": {
+                        "label": {
+                            "en": [
+                                "Partially completed"
+                            ]
+                        },
+                        "value": "partial"
+                    }
+                },
+                "workNumber": "ETC 1"
+            },
+            {
+                "relationshipType": "rism:SecondaryPartOf",
+                "relatedTo": {
+                    "id": "https://rism.online/publications/51004444",
+                    "label": {
+                        "none": [
+                            "Edward Elgar : a thematic catalogue and research guide"
+                        ]
+                    },
+                    "type": "rism:Publication",
+                    "typeLabel": {
+                        "en": [
+                            "Work catalog"
+                        ]
+                    },
+                    "status": {
+                        "label": {
+                            "en": [
+                                "Alternate"
+                            ]
+                        },
+                        "value": "alternate"
+                    }
+                },
+                "workNumber": "KenE 1892-6"
+            }
+        ]
+    },
+    "recordHistory": {
+        "type": "rism:RecordHistory",
+        "created": {
+            "label": {
+                "en": [
+                    "Created on"
+                ]
+            },
+            "value": "2026-04-08T08:22:28Z"
+        },
+        "updated": {
+            "label": {
+                "en": [
+                    "Last modification"
+                ]
+            },
+            "value": "2026-09-02T11:48:06Z"
+        }
+    },
+    "incipits": {
+        "id": "https://rism.online/works/51461/incipits",
+        "sectionLabel": {
+            "en": [
+                "Incipits"
+            ]
+        },
+        "type": "rism:WorkIncipitsSection",
+        "items": [
+            {
+                "id": "https://rism.online/works/51461/incipits/1.1.1",
+                "type": "rism:Incipit",
+                "label": {
+                    "none": [
+                        "1.1.1 Allegro maestoso"
+                    ]
+                },
+                "summary": [
+                    {
+                        "label": {
+                            "en": [
+                                "Title of movement, tempo"
+                            ]
+                        },
+                        "value": {
+                            "none": [
+                                "Allegro maestoso"
+                            ]
+                        }
+                    },
+                    {
+                        "label": {
+                            "en": [
+                                "Text incipit"
+                            ]
+                        },
+                        "value": {
+                            "none": [
+                                "'Twas Pentecost, the Feast of Gladness"
+                            ]
+                        }
+                    },
+                    {
+                        "label": {
+                            "en": [
+                                "Key or mode"
+                            ]
+                        },
+                        "value": {
+                            "en": [
+                                "G major"
+                            ]
+                        }
+                    },
+                    {
+                        "label": {
+                            "en": [
+                                "Time signature"
+                            ]
+                        },
+                        "value": {
+                            "none": [
+                                "3/4"
+                            ]
+                        }
+                    }
+                ],
+                "properties": {
+                    "keysig": "n",
+                    "timesig": "3/4"
+                }
+            }
+        ]
+    },
+    "sources": {
+        "sectionLabel": {
+            "en": [
+                "Sources"
+            ]
+        },
+        "url": "https://rism.online/works/41327/sources",
+        "totalItems": 2
+    },
+    "formOfWork": {
+        "sectionLabel": {
+            "en": [
+                "Form of work"
+            ]
+        },
+        "items": [
+            {
+                "id": "https://rism.online/subjects/50001734",
+                "type": "rism:Subject",
+                "label": {
+                    "none": [
+                        "Choral music"
+                    ]
+                },
+                "value": "Choral+music"
+            },
+            {
+                "id": "https://rism.online/subjects/25226",
+                "type": "rism:Subject",
+                "label": {
+                    "none": [
+                        "Cantatas"
+                    ]
+                },
+                "value": "Cantatas"
+            }
+        ]
+    },
+    "referencesNotes": {
+        "id": "https://rism.online/works/51461/references-notes",
+        "sectionLabel": {
+            "en": [
+                "References and notes"
+            ]
+        },
+        "type": "rism:ReferencesNotesSection",
+        "notes": [
+            {
+                "label": {
+                    "en": [
+                        "Catalog of works"
+                    ]
+                },
+                "value": {
+                    "none": [
+                        "<span>[No author]. <i>Elgar Thematic Catalogue.</i>.</span> [ETC, 1].</span>"
+                    ]
+                }
+            }
+        ]
+    },
+    "relationships": {
+        "id": "https://rism.online/works/51461/relationships",
+        "sectionLabel": {
+            "en": [
+                "Relations"
+            ]
+        },
+        "items": [
+            {
+                "role": {
+                    "id": "http://id.loc.gov/vocabulary/relators/trl",
+                    "label": {
+                        "en": [
+                            "Translator"
+                        ]
+                    },
+                    "value": "trl"
+                },
+                "relatedTo": {
+                    "id": "https://rism.online/people/122036",
+                    "label": {
+                        "none": [
+                            "Longfellow, Henry Wadsworth (1807-1882)"
+                        ]
+                    },
+                    "type": "rism:Person"
+                }
+            },
+            {
+                "role": {
+                    "id": "http://id.loc.gov/vocabulary/relators/lyr",
+                    "label": {
+                        "en": [
+                            "Lyricist"
+                        ]
+                    },
+                    "value": "lyr"
+                },
+                "relatedTo": {
+                    "id": "https://rism.online/people/127696",
+                    "label": {
+                        "none": [
+                            "Uhland, Ludwig (1787-1862)"
+                        ]
+                    },
+                    "type": "rism:Person"
+                }
+            },
+            {
+                "role": {
+                    "id": "http://id.loc.gov/vocabulary/relators/dte",
+                    "label": {
+                        "en": [
+                            "Dedicatee"
+                        ]
+                    },
+                    "value": "dte"
+                },
+                "relatedTo": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/people/122036.json",
+                    "label": {
+                        "none": [
+                            "Name of person"
+                        ]
+                    },
+                    "type": "rism:Person"
+                }
+            }
+        ]
+    },
+    "properties": {
+        "keyMode": "G",
+        "dates": {
+            "earliestDate": 1893,
+            "latestDate": 1893,
+            "dateStatement": "1893 (1889-1893)"
+        }
+    },
+    "parts": {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#parts",
+        "items": [
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#part-1",
+                "title": "The Black Knight",
+                "instrumentation": {
+                    "label": "Scoring summary",
+                    "value": "Coro, pf"
+                },
+                "key": {
+                    "label": "Key or mode",
+                    "value": "G major"
+                },
+                "relatedTo": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/works/etc-0002.json"
+                }
+            }
+        ]
+    },
+    "textSource": "Henry Wadsworth Longfellow's English translation of Ludwig Uhland's poem 'Der schwarze Ritter'",
+    "events": {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#events",
+        "items": [
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json"
+            },
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json"
+            },
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json"
+            }
+        ]
+    },
+    "documents": {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#documents",
+        "items": [
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json"
+            },
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json"
+            },
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json"
+            }
+        ]
+    },
+    "workNotes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+    "created": "2026-10-01T09:00:00Z",
+    "updated": "2026-10-01T09:00:00Z",
+    "included": [
+        {
+            "id": "rism:Work",
+            "label": {
+                "en": [
+                    "Work"
+                ]
+            }
+        },
+        {
+            "id": "rism:Publication",
+            "label": {
+                "en": [
+                    "Work catalog"
+                ]
+            }
+        }
+    ]
+}

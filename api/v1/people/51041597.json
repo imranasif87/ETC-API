@@ -1,0 +1,28 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/person.json",
+  "id": "https://rism.online/people/51041597",
+  "type": "suppa:Person",
+  "etcIdentifier": "ETC 1",
+  "activityByPlace": {
+    "items": [
+      {
+        "place": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0002.json",
+        "activities": [
+          "Took part in rehearsals for The Black Knight (placeholder)"
+        ]
+      }
+    ]
+  },
+  "biography": "Organist, and dedicatee of The Black Knight.",
+  "relatedWorks": {
+    "items": [
+      {
+        "role": "etcrel:dedicatee",
+        "relatedTo": "https://rism.online/works/51461"
+      }
+    ]
+  },
+  "personNotes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

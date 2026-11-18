@@ -1,1 +1,174 @@
-{}
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+        "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "type": "@type",
+        "id": "@id",
+        "created": {
+            "@id": "dcterms:created",
+            "@type": "xsd:dateTime"
+        },
+        "updated": {
+            "@id": "dcterms:modified",
+            "@type": "xsd:dateTime"
+        },
+        "etcIdentifier": {
+            "@id": "suppa:etcIdentifier"
+        },
+        "label": {
+            "@id": "rdfs:label"
+        },
+        "relatedTo": {
+            "@id": "dcterms:relation",
+            "@type": "@id"
+        },
+        "certainty": {
+            "@id": "suppa:certainty",
+            "@type": "@vocab"
+        },
+        "date": {
+            "@id": "dcterms:date"
+        },
+        "citation": {
+            "@id": "dcterms:bibliographicCitation"
+        },
+        "note": {
+            "@id": "rdfs:comment"
+        },
+        "performanceType": {
+            "@id": "suppa:performanceType",
+            "@type": "@vocab"
+        },
+        "time": {
+            "@id": "suppa:time"
+        },
+        "datePrecision": {
+            "@id": "suppa:datePrecision",
+            "@type": "@vocab"
+        },
+        "dateCertainty": {
+            "@id": "suppa:dateCertainty",
+            "@type": "@vocab"
+        },
+        "venue": {
+            "@id": "suppa:venue",
+            "@type": "@id"
+        },
+        "occasion": {
+            "@id": "suppa:occasion"
+        },
+        "movements": {
+            "@id": "suppa:movements"
+        },
+        "version": {
+            "@id": "suppa:version"
+        },
+        "programmePosition": {
+            "@id": "suppa:programmePosition",
+            "@type": "xsd:integer"
+        },
+        "worksPerformed": {
+            "@id": "suppa:worksPerformed",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasWorkPerformed",
+                    "@container": "@set"
+                }
+            }
+        },
+        "ensembles": {
+            "@id": "suppa:ensembles",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasEnsemble",
+                    "@container": "@set"
+                }
+            }
+        },
+        "role": {
+            "@id": "suppa:hasRole",
+            "@type": "@vocab"
+        },
+        "authority": {
+            "@id": "suppa:authority",
+            "@type": "@id"
+        },
+        "participants": {
+            "@id": "suppa:participants",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasParticipant",
+                    "@container": "@set"
+                }
+            }
+        },
+        "institutions": {
+            "@id": "suppa:institutions",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasInstitution",
+                    "@container": "@set"
+                }
+            }
+        },
+        "descriptionLabel": {
+            "@id": "suppa:descriptionLabel"
+        },
+        "description": {
+            "@id": "dcterms:description",
+            "@type": "rdf:HTML"
+        },
+        "reviewer": {
+            "@id": "suppa:reviewer"
+        },
+        "format": {
+            "@id": "suppa:format",
+            "@type": "@vocab"
+        },
+        "reviews": {
+            "@id": "suppa:reviews",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasReview",
+                    "@container": "@set"
+                }
+            }
+        },
+        "evidence": {
+            "@id": "suppa:evidence",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasEvidence",
+                    "@container": "@set"
+                }
+            }
+        },
+        "relatedRecordings": {
+            "@id": "suppa:relatedRecordings",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasRelatedRecording",
+                    "@container": "@set"
+                }
+            }
+        },
+        "notes": {
+            "@id": "rdfs:comment"
+        }
+    }
+}

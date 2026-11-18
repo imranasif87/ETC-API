@@ -1,0 +1,48 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/performance.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json",
+  "type": "suppa:Performance",
+  "etcIdentifier": "ETC 1",
+  "label": "The Black Knight, Birmingham, 22 March 1900",
+  "performanceType": "etcrel:revival",
+  "date": "1900-03-22",
+  "datePrecision": "etcrel:day",
+  "dateCertainty": "etcrel:probable",
+  "venue": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0003.json",
+  "occasion": "Choral society concert",
+  "worksPerformed": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/works/51461",
+        "programmePosition": 2
+      }
+    ]
+  },
+  "ensembles": {
+    "items": [
+      {
+        "label": "Birmingham choral society (placeholder)"
+      }
+    ]
+  },
+  "participants": {
+    "items": [
+      {
+        "relatedTo": "https://rism.online/people/45128",
+        "certainty": "etcrel:confirmed",
+        "role": "etcrel:conductor"
+      }
+    ]
+  },
+  "reviews": {
+    "items": [
+      {
+        "citation": "Review in a Birmingham newspaper (placeholder citation).",
+        "reviewer": "Unsigned"
+      }
+    ]
+  },
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

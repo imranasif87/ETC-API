@@ -1,1 +1,145 @@
-{}
+{
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "dcterms": "http://purl.org/dc/terms/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+        "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "type": "@type",
+        "id": "@id",
+        "created": {
+            "@id": "dcterms:created",
+            "@type": "xsd:dateTime"
+        },
+        "updated": {
+            "@id": "dcterms:modified",
+            "@type": "xsd:dateTime"
+        },
+        "etcIdentifier": {
+            "@id": "suppa:etcIdentifier"
+        },
+        "label": {
+            "@id": "rdfs:label"
+        },
+        "relatedTo": {
+            "@id": "dcterms:relation",
+            "@type": "@id"
+        },
+        "certainty": {
+            "@id": "suppa:certainty",
+            "@type": "@vocab"
+        },
+        "uri": {
+            "@id": "suppa:uri",
+            "@type": "@id"
+        },
+        "linkLabel": {
+            "@id": "suppa:linkLabel"
+        },
+        "itemLocation": {
+            "@id": "suppa:itemLocation",
+            "@type": "@id"
+        },
+        "repositoryName": {
+            "@id": "suppa:repositoryName"
+        },
+        "repository": {
+            "@id": "suppa:repository",
+            "@type": "@id"
+        },
+        "rismSiglum": {
+            "@id": "suppa:rismSiglum"
+        },
+        "shelfmark": {
+            "@id": "suppa:shelfmark"
+        },
+        "note": {
+            "@id": "rdfs:comment"
+        },
+        "side": {
+            "@id": "suppa:side",
+            "@type": "@vocab"
+        },
+        "images": {
+            "@id": "suppa:images",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasImage",
+                    "@container": "@set"
+                }
+            }
+        },
+        "senders": {
+            "@id": "suppa:senders",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasSender",
+                    "@container": "@set"
+                }
+            }
+        },
+        "recipients": {
+            "@id": "suppa:recipients",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasRecipient",
+                    "@container": "@set"
+                }
+            }
+        },
+        "postmarkDate": {
+            "@id": "suppa:postmarkDate"
+        },
+        "dateWritten": {
+            "@id": "suppa:dateWritten"
+        },
+        "postmarkLocation": {
+            "@id": "suppa:postmarkLocation",
+            "@type": "@id"
+        },
+        "depictedLocation": {
+            "@id": "suppa:depictedLocation",
+            "@type": "@id"
+        },
+        "pictureDescription": {
+            "@id": "suppa:pictureDescription"
+        },
+        "transcription": {
+            "@id": "suppa:transcription"
+        },
+        "language": {
+            "@id": "dcterms:language"
+        },
+        "worksMentioned": {
+            "@id": "suppa:worksMentioned",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasWorkMentioned",
+                    "@container": "@set"
+                }
+            }
+        },
+        "personsMentioned": {
+            "@id": "suppa:personsMentioned",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasPersonMentioned",
+                    "@container": "@set"
+                }
+            }
+        },
+        "notes": {
+            "@id": "rdfs:comment"
+        }
+    }
+}

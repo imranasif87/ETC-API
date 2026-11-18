@@ -1,0 +1,18 @@
+{
+  "@context": "https://imranasif87.github.io/ETC-API/api/v1/place.json",
+  "id": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0004.json",
+  "type": "suppa:Place",
+  "etcIdentifier": "ETC 1",
+  "placeName": "Kingsway Hall, London",
+  "placeType": "etcrel:concertHall",
+  "cityTown": "London",
+  "country": "United Kingdom",
+  "latitude": "51.51",
+  "longitude": "-0.12",
+  "coordinatePrecision": "etcrel:approximate",
+  "existenceDates": "1912-1998",
+  "currentStatus": "etcrel:demolished",
+  "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+  "created": "2026-10-01T09:00:00Z",
+  "updated": "2026-10-01T09:00:00Z"
+}

@@ -1,0 +1,866 @@
+{
+    "@context": [
+        "https://rism.online/api/v1/work.json",
+        "https://imranasif87.github.io/ETC-API/api/v1/work.json"
+    ],
+    "id": "https://rism.online/works/51461",
+    "type": [
+        "rism:Work",
+        "suppa:Work"
+    ],
+    "label": {
+        "en": [
+            "The black knight–G major, ETC 1"
+        ]
+    },
+    "typeLabel": {
+        "en": [
+            "Work"
+        ]
+    },
+    "creator": {
+        "role": {
+            "id": "http://id.loc.gov/vocabulary/relators/cre",
+            "label": {
+                "en": [
+                    "Composer/Author"
+                ]
+            },
+            "value": "cre"
+        },
+        "relatedTo": {
+            "id": "https://rism.online/people/45128",
+            "label": {
+                "none": [
+                    "Elgar, Edward (1857-1934)"
+                ]
+            },
+            "type": "rism:Person"
+        }
+    },
+    "summary": [
+        {
+            "label": {
+                "en": [
+                    "Opus number"
+                ]
+            },
+            "value": {
+                "none": [
+                    "op. 25"
+                ]
+            },
+            "type": [
+                "dcterms:identifier",
+                "pmo:OpusNumberStatement"
+            ]
+        },
+        {
+            "label": {
+                "en": [
+                    "Key or mode"
+                ]
+            },
+            "value": {
+                "en": [
+                    "G major"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Scoring summary"
+                ]
+            },
+            "value": {
+                "none": [
+                    "Coro, orch"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Text incipit"
+                ]
+            },
+            "value": {
+                "none": [
+                    "'Twas Pentecost, the Feast of Gladness"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Standardized title"
+                ]
+            },
+            "value": {
+                "none": [
+                    "The black knight"
+                ]
+            },
+            "type": [
+                "dcterms:title",
+                "rism:StandardizedTitle"
+            ]
+        },
+        {
+            "label": {
+                "en": [
+                    "Dates"
+                ]
+            },
+            "value": {
+                "none": [
+                    "1893 (1889-1893)"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "RISM ID number"
+                ]
+            },
+            "value": {
+                "none": [
+                    "works/51461"
+                ]
+            }
+        }
+    ],
+    "partOf": {
+        "label": {
+            "en": [
+                "Item part of"
+            ]
+        },
+        "type": "rism:PartOfSection",
+        "items": [
+            {
+                "relationshipType": "rism:PrimaryPartOf",
+                "relatedTo": {
+                    "id": "https://rism.online/publications/51004623",
+                    "label": {
+                        "none": [
+                            "Elgar Thematic Catalogue"
+                        ]
+                    },
+                    "type": "rism:Publication",
+                    "typeLabel": {
+                        "en": [
+                            "Work catalog"
+                        ]
+                    },
+                    "status": {
+                        "label": {
+                            "en": [
+                                "Partially completed"
+                            ]
+                        },
+                        "value": "partial"
+                    }
+                },
+                "workNumber": "ETC 1"
+            },
+            {
+                "relationshipType": "rism:SecondaryPartOf",
+                "relatedTo": {
+                    "id": "https://rism.online/publications/51004444",
+                    "label": {
+                        "none": [
+                            "Edward Elgar : a thematic catalogue and research guide"
+                        ]
+                    },
+                    "type": "rism:Publication",
+                    "typeLabel": {
+                        "en": [
+                            "Work catalog"
+                        ]
+                    },
+                    "status": {
+                        "label": {
+                            "en": [
+                                "Alternate"
+                            ]
+                        },
+                        "value": "alternate"
+                    }
+                },
+                "workNumber": "KenE 1892-6"
+            }
+        ]
+    },
+    "recordHistory": {
+        "type": "rism:RecordHistory",
+        "created": {
+            "label": {
+                "en": [
+                    "Created on"
+                ]
+            },
+            "value": "2026-04-08T08:22:28Z"
+        },
+        "updated": {
+            "label": {
+                "en": [
+                    "Last modification"
+                ]
+            },
+            "value": "2026-09-02T11:48:06Z"
+        }
+    },
+    "incipits": {
+        "id": "https://rism.online/works/51461/incipits",
+        "sectionLabel": {
+            "en": [
+                "Incipits"
+            ]
+        },
+        "type": "rism:WorkIncipitsSection",
+        "items": [
+            {
+                "id": "https://rism.online/works/51461/incipits/1.1.1",
+                "type": "rism:Incipit",
+                "label": {
+                    "none": [
+                        "1.1.1 Allegro maestoso"
+                    ]
+                },
+                "summary": [
+                    {
+                        "label": {
+                            "en": [
+                                "Title of movement, tempo"
+                            ]
+                        },
+                        "value": {
+                            "none": [
+                                "Allegro maestoso"
+                            ]
+                        }
+                    },
+                    {
+                        "label": {
+                            "en": [
+                                "Text incipit"
+                            ]
+                        },
+                        "value": {
+                            "none": [
+                                "'Twas Pentecost, the Feast of Gladness"
+                            ]
+                        }
+                    },
+                    {
+                        "label": {
+                            "en": [
+                                "Key or mode"
+                            ]
+                        },
+                        "value": {
+                            "en": [
+                                "G major"
+                            ]
+                        }
+                    },
+                    {
+                        "label": {
+                            "en": [
+                                "Time signature"
+                            ]
+                        },
+                        "value": {
+                            "none": [
+                                "3/4"
+                            ]
+                        }
+                    }
+                ],
+                "properties": {
+                    "keysig": "n",
+                    "timesig": "3/4"
+                }
+            }
+        ]
+    },
+    "sources": {
+        "sectionLabel": {
+            "en": [
+                "Sources"
+            ]
+        },
+        "url": "https://rism.online/works/41327/sources",
+        "totalItems": 2
+    },
+    "formOfWork": {
+        "sectionLabel": {
+            "en": [
+                "Form of work"
+            ]
+        },
+        "items": [
+            {
+                "id": "https://rism.online/subjects/50001734",
+                "type": "rism:Subject",
+                "label": {
+                    "none": [
+                        "Choral music"
+                    ]
+                },
+                "value": "Choral+music"
+            },
+            {
+                "id": "https://rism.online/subjects/25226",
+                "type": "rism:Subject",
+                "label": {
+                    "none": [
+                        "Cantatas"
+                    ]
+                },
+                "value": "Cantatas"
+            }
+        ]
+    },
+    "referencesNotes": {
+        "id": "https://rism.online/works/51461/references-notes",
+        "sectionLabel": {
+            "en": [
+                "References and notes"
+            ]
+        },
+        "type": "rism:ReferencesNotesSection",
+        "notes": [
+            {
+                "label": {
+                    "en": [
+                        "Catalog of works"
+                    ]
+                },
+                "value": {
+                    "none": [
+                        "<span>[No author]. <i>Elgar Thematic Catalogue.</i>.</span> [ETC, 1].</span>"
+                    ]
+                }
+            }
+        ]
+    },
+    "relationships": {
+        "id": "https://rism.online/works/51461/relationships",
+        "sectionLabel": {
+            "en": [
+                "Relations"
+            ]
+        },
+        "items": [
+            {
+                "role": {
+                    "id": "http://id.loc.gov/vocabulary/relators/trl",
+                    "label": {
+                        "en": [
+                            "Translator"
+                        ]
+                    },
+                    "value": "trl"
+                },
+                "relatedTo": {
+                    "id": "https://rism.online/people/122036",
+                    "label": {
+                        "none": [
+                            "Longfellow, Henry Wadsworth (1807-1882)"
+                        ]
+                    },
+                    "type": "rism:Person"
+                }
+            },
+            {
+                "role": {
+                    "id": "http://id.loc.gov/vocabulary/relators/lyr",
+                    "label": {
+                        "en": [
+                            "Lyricist"
+                        ]
+                    },
+                    "value": "lyr"
+                },
+                "relatedTo": {
+                    "id": "https://rism.online/people/127696",
+                    "label": {
+                        "none": [
+                            "Uhland, Ludwig (1787-1862)"
+                        ]
+                    },
+                    "type": "rism:Person"
+                }
+            },
+            {
+                "role": {
+                    "id": "http://id.loc.gov/vocabulary/relators/dte",
+                    "label": {
+                        "en": [
+                            "Dedicatee"
+                        ]
+                    },
+                    "value": "dte"
+                },
+                "relatedTo": {
+                    "id": "https://rism.online/people/51041597",
+                    "label": {
+                        "none": [
+                            "Blair, Hugh (1864-1932)"
+                        ]
+                    },
+                    "type": "rism:Person"
+                }
+            },
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#rel-dte-1",
+                "role": {
+                    "id": "http://id.loc.gov/vocabulary/relators/dte",
+                    "label": {
+                        "en": [
+                            "Dedicatee"
+                        ]
+                    },
+                    "value": "dte"
+                },
+                "relatedTo": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/people/122036.json",
+                    "label": {
+                        "none": [
+                            "Name of person"
+                        ]
+                    },
+                    "type": "rism:Person"
+                }
+            }
+        ]
+    },
+    "properties": {
+        "keyMode": "G",
+        "dates": {
+            "earliestDate": 1893,
+            "latestDate": 1893,
+            "dateStatement": "1893 (1889-1893)"
+        }
+    },
+    "parts": {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#parts",
+        "items": [
+            {
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#part-1",
+                "title": "The Black Knight",
+                "instrumentation": {
+                    "label": "Scoring summary",
+                    "value": "Coro, pf"
+                },
+                "key": {
+                    "label": "Key or mode",
+                    "value": "G major"
+                },
+                "relatedTo": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/works/etc-0002.json"
+                }
+            }
+        ]
+    },
+    "textSource": "Henry Wadsworth Longfellow's English translation of Ludwig Uhland's poem 'Der schwarze Ritter'",
+    "events": {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#events",
+        "items": [
+            {
+                "@context": "https://imranasif87.github.io/ETC-API/api/v1/performance.json",
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json",
+                "type": "suppa:Performance",
+                "etcIdentifier": "ETC 1",
+                "label": "The Black Knight, Worcester, 18 April 1893",
+                "performanceType": "etcrel:premiere",
+                "date": "1893-04-18",
+                "datePrecision": "etcrel:day",
+                "dateCertainty": "etcrel:confirmed",
+                "venue": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0002.json",
+                "occasion": "Worcester Festival Choral Society concert",
+                "worksPerformed": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#worksPerformed",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#worksPerformed-1",
+                            "relatedTo": "https://rism.online/works/51461",
+                            "programmePosition": 1
+                        }
+                    ]
+                },
+                "ensembles": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#ensembles",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#ensembles-1",
+                            "label": "Worcester Festival Choral Society and orchestra"
+                        }
+                    ]
+                },
+                "participants": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#participants",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0001.json#participants-1",
+                            "relatedTo": "https://rism.online/people/45128",
+                            "certainty": "etcrel:confirmed",
+                            "role": "etcrel:conductor"
+                        }
+                    ]
+                },
+                "descriptionLabel": "Programme note",
+                "description": "Programme and personnel are <i>placeholders</i>.",
+                "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+                "created": "2026-10-01T09:00:00Z",
+                "updated": "2026-10-01T09:00:00Z"
+            },
+            {
+                "@context": "https://imranasif87.github.io/ETC-API/api/v1/performance.json",
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json",
+                "type": "suppa:Performance",
+                "etcIdentifier": "ETC 1",
+                "label": "The Black Knight, Birmingham, 22 March 1900",
+                "performanceType": "etcrel:revival",
+                "date": "1900-03-22",
+                "datePrecision": "etcrel:day",
+                "dateCertainty": "etcrel:probable",
+                "venue": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0003.json",
+                "occasion": "Choral society concert",
+                "worksPerformed": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#worksPerformed",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#worksPerformed-1",
+                            "relatedTo": "https://rism.online/works/51461",
+                            "programmePosition": 2
+                        }
+                    ]
+                },
+                "ensembles": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#ensembles",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#ensembles-1",
+                            "label": "Birmingham choral society (placeholder)"
+                        }
+                    ]
+                },
+                "participants": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#participants",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#participants-1",
+                            "relatedTo": "https://rism.online/people/45128",
+                            "certainty": "etcrel:confirmed",
+                            "role": "etcrel:conductor"
+                        }
+                    ]
+                },
+                "reviews": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#reviews",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/performances/perf-0002.json#reviews-1",
+                            "citation": "Review in a Birmingham newspaper (placeholder citation).",
+                            "reviewer": "Unsigned"
+                        }
+                    ]
+                },
+                "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+                "created": "2026-10-01T09:00:00Z",
+                "updated": "2026-10-01T09:00:00Z"
+            },
+            {
+                "@context": "https://imranasif87.github.io/ETC-API/api/v1/recording.json",
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json",
+                "type": "suppa:Recording",
+                "etcIdentifier": "ETC 1",
+                "label": "The Black Knight (excerpt), Example Records EX 1234",
+                "charmRecordingId": "CHARM-PLACEHOLDER",
+                "matrixNumber": "Cc 0000-1",
+                "takeNumber": "1",
+                "recordingDate": "1931-06-14",
+                "datePrecision": "etcrel:day",
+                "dateCertainty": "etcrel:possible",
+                "recordingPlace": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0004.json",
+                "worksRecorded": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#worksRecorded",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#worksRecorded-1",
+                            "relatedTo": "https://rism.online/works/51461",
+                            "movements": "Excerpt"
+                        }
+                    ]
+                },
+                "elgarInvolvement": "etcrel:conductor",
+                "performers": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#performers",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#performers-1",
+                            "relatedTo": "https://rism.online/people/45128",
+                            "certainty": "etcrel:confirmed",
+                            "role": "etcrel:conductor"
+                        }
+                    ]
+                },
+                "issues": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#issues",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#issues-1",
+                            "recordLabel": "Example Records",
+                            "catalogueNumber": "EX 1234",
+                            "format": "etcrel:disc78",
+                            "issueDate": "1931-10"
+                        }
+                    ]
+                },
+                "audioAccess": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#audioAccess",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/recordings/rec-0001.json#audioAccess-1",
+                            "uri": "https://archive.org/details/example-black-knight-excerpt",
+                            "linkLabel": "Listen on archive.org (placeholder link)",
+                            "rightsNote": "Rights not checked (placeholder)."
+                        }
+                    ]
+                },
+                "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+                "created": "2026-10-01T09:00:00Z",
+                "updated": "2026-10-01T09:00:00Z"
+            }
+        ]
+    },
+    "documents": {
+        "id": "https://imranasif87.github.io/ETC-API/api/v1/works/51461#documents",
+        "items": [
+            {
+                "@context": "https://imranasif87.github.io/ETC-API/api/v1/correspondence.json",
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json",
+                "type": "suppa:Correspondence",
+                "etcIdentifier": "ETC 1",
+                "label": "Letter from Edward Elgar to Hugh Blair, 2 March 1893",
+                "referenceType": "etcrel:letter",
+                "authors": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#authors",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#authors-1",
+                            "relatedTo": "https://rism.online/people/45128",
+                            "certainty": "etcrel:confirmed"
+                        }
+                    ]
+                },
+                "recipients": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#recipients",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#recipients-1",
+                            "relatedTo": "https://rism.online/people/51041597",
+                            "certainty": "etcrel:confirmed"
+                        }
+                    ]
+                },
+                "date": "1893-03-02",
+                "dateAsWritten": "2 Mar. 1893",
+                "datePrecision": "etcrel:day",
+                "dateCertainty": "etcrel:confirmed",
+                "placeWritten": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0001.json",
+                "worksMentioned": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#worksMentioned",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#worksMentioned-1",
+                            "relatedTo": "https://rism.online/works/51461",
+                            "note": "Discusses rehearsals."
+                        }
+                    ]
+                },
+                "summary": "Arrangements for choir rehearsals (placeholder).",
+                "itemLocation": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#itemLocation",
+                    "repositoryName": "Example Archive",
+                    "rismSiglum": "GB-Ex",
+                    "shelfmark": "MS 1/2",
+                    "uri": "https://example.org/archive/ms-1-2",
+                    "linkLabel": "Archive catalogue entry"
+                },
+                "transcription": "Dear Blair, ... (placeholder transcription)",
+                "printedReproductions": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#printedReproductions",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#printedReproductions-1",
+                            "citation": "Example, A. (ed.). 1990. Elgar Letters. Oxford: Example Press, letter no. 1."
+                        }
+                    ]
+                },
+                "digitalResources": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#digitalResources",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0001.json#digitalResources-1",
+                            "uri": "https://example.org/digitised/ms-1-2",
+                            "linkLabel": "Digitised manuscript",
+                            "kind": "etcrel:image"
+                        }
+                    ]
+                },
+                "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+                "created": "2026-10-01T09:00:00Z",
+                "updated": "2026-10-01T09:00:00Z"
+            },
+            {
+                "@context": "https://imranasif87.github.io/ETC-API/api/v1/correspondence.json",
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json",
+                "type": "suppa:Correspondence",
+                "etcIdentifier": "ETC 1",
+                "label": "Letter from Hugh Blair to Edward Elgar, 20 March 1893",
+                "referenceType": "etcrel:letter",
+                "authors": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json#authors",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json#authors-1",
+                            "relatedTo": "https://rism.online/people/51041597",
+                            "certainty": "etcrel:confirmed"
+                        }
+                    ]
+                },
+                "recipients": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json#recipients",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json#recipients-1",
+                            "relatedTo": "https://rism.online/people/45128",
+                            "certainty": "etcrel:confirmed"
+                        }
+                    ]
+                },
+                "date": "1893-03-20",
+                "dateAsWritten": "20th March",
+                "datePrecision": "etcrel:day",
+                "dateCertainty": "etcrel:probable",
+                "worksMentioned": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json#worksMentioned",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json#worksMentioned-1",
+                            "relatedTo": "https://rism.online/works/51461",
+                            "note": "Replies about the chorus."
+                        }
+                    ]
+                },
+                "itemLocation": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/correspondence/corr-0002.json#itemLocation",
+                    "repositoryName": "Example Library",
+                    "rismSiglum": "GB-Ex2",
+                    "shelfmark": "Add MS 100, f. 3",
+                    "uri": "https://example.org/library/add-ms-100",
+                    "linkLabel": "Library catalogue entry"
+                },
+                "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+                "created": "2026-10-01T09:00:00Z",
+                "updated": "2026-10-01T09:00:00Z"
+            },
+            {
+                "@context": "https://imranasif87.github.io/ETC-API/api/v1/postcard.json",
+                "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json",
+                "type": "suppa:Postcard",
+                "etcIdentifier": "ETC 1",
+                "label": "Postcard from Edward Elgar to Hugh Blair, 10 April 1893",
+                "images": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#images",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#images-1",
+                            "side": "etcrel:front",
+                            "uri": "https://example.org/images/pc-1-7-front",
+                            "linkLabel": "Front (picture)"
+                        },
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#images-2",
+                            "side": "etcrel:back",
+                            "uri": "https://example.org/images/pc-1-7-back",
+                            "linkLabel": "Back (message)"
+                        }
+                    ]
+                },
+                "senders": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#senders",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#senders-1",
+                            "relatedTo": "https://rism.online/people/45128",
+                            "certainty": "etcrel:confirmed"
+                        }
+                    ]
+                },
+                "recipients": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#recipients",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#recipients-1",
+                            "relatedTo": "https://rism.online/people/51041597",
+                            "certainty": "etcrel:confirmed"
+                        }
+                    ]
+                },
+                "postmarkDate": "1893-04-10",
+                "postmarkLocation": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0001.json",
+                "depictedLocation": "https://imranasif87.github.io/ETC-API/api/v1/places/place-0002.json",
+                "pictureDescription": "A view of the hall (placeholder).",
+                "transcription": "Rehearsal moved to Thursday. E.E.",
+                "language": "en",
+                "worksMentioned": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#worksMentioned",
+                    "items": [
+                        {
+                            "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#worksMentioned-1",
+                            "relatedTo": "https://rism.online/works/51461"
+                        }
+                    ]
+                },
+                "itemLocation": {
+                    "id": "https://imranasif87.github.io/ETC-API/api/v1/postcards/pc-0001.json#itemLocation",
+                    "repositoryName": "Example Archive",
+                    "shelfmark": "PC 1/7",
+                    "uri": "https://example.org/archive/pc-1-7",
+                    "linkLabel": "Archive catalogue entry"
+                },
+                "notes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+                "created": "2026-10-01T09:00:00Z",
+                "updated": "2026-10-01T09:00:00Z"
+            }
+        ]
+    },
+    "workNotes": "Illustrative record for demonstration. Values are placeholders and have not been verified.",
+    "created": "2026-10-01T09:00:00Z",
+    "updated": "2026-10-01T09:00:00Z",
+    "included": [
+        {
+            "id": "rism:Work",
+            "label": {
+                "en": [
+                    "Work"
+                ]
+            }
+        },
+        {
+            "id": "rism:Publication",
+            "label": {
+                "en": [
+                    "Work catalog"
+                ]
+            }
+        }
+    ]
+}
