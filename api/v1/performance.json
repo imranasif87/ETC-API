@@ -1,7 +1,7 @@
 {
     "@context": {
         "@version": 1.1,
-        "@protected": true,
+        "@protected": false,
         "@vocab": "https://etc.web.ox.ac.uk/api/v1#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
@@ -24,7 +24,11 @@
             "@id": "suppa:etcIdentifier"
         },
         "label": {
-            "@id": "rdfs:label"
+            "@id": "rdfs:label",
+            "@container": [
+                "@language",
+                "@set"
+            ]
         },
         "relatedTo": {
             "@id": "dcterms:relation",
