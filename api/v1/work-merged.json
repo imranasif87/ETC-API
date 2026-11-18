@@ -1,123 +1,125 @@
 {
-    "@version": 1.1,
-    "@protected": true,
-    "suppa": "https://etc.web.ox.ac.uk/api/v1#",
-    "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
-    "prov": "http://www.w3.org/ns/prov#",
-    "created": {
-        "@id": "dcterms:created",
-        "@type": "xsd:dateTime"
-    },
-    "updated": {
-        "@id": "dcterms:modified",
-        "@type": "xsd:dateTime"
-    },
-    "etcIdentifier": {
-        "@id": "suppa:etcIdentifier"
-    },
-    "derivedFrom": {
-        "@id": "prov:wasDerivedFrom",
-        "@type": "@id"
-    },
-    "relatedTo": {
-        "@id": "dcterms:relation",
-        "@type": "@id"
-    },
-    "date": {
-        "@id": "dcterms:date"
-    },
-    "citation": {
-        "@id": "dcterms:bibliographicCitation"
-    },
-    "place": {
-        "@id": "suppa:place",
-        "@type": "@id"
-    },
-    "format": {
-        "@id": "suppa:format",
-        "@type": "@vocab"
-    },
-    "title": {
-        "@id": "dcterms:title"
-    },
-    "instrumentation": {
-        "@id": "suppa:instrumentation"
-    },
-    "key": {
-        "@id": "suppa:key"
-    },
-    "textSource": {
-        "@id": "suppa:textSource"
-    },
-    "workNotes": {
-        "@id": "rdfs:comment"
-    },
-    "parts": {
-        "@id": "suppa:parts",
-        "@type": "@id",
-        "@context": {
-            "items": {
-                "@id": "suppa:hasPart",
-                "@container": "@set"
-            }
-        }
-    },
-    "themes": {
-        "@id": "suppa:themes",
-        "@type": "@id",
-        "@context": {
-            "items": {
-                "@id": "suppa:hasTheme",
-                "@container": "@set"
-            }
-        }
-    },
-    "dedicatees": {
-        "@id": "suppa:dedicatees",
-        "@type": "@id",
-        "@context": {
-            "items": {
-                "@id": "suppa:hasDedicatee",
-                "@container": "@set"
-            }
-        }
-    },
-    "literature": {
-        "@id": "suppa:literature",
-        "@type": "@id",
-        "@context": {
-            "items": {
-                "@id": "suppa:hasLiteratureReference",
-                "@container": "@set"
-            }
-        }
-    },
-    "events": {
-        "@id": "suppa:events",
-        "@type": "@id",
-        "@context": [
-            "https://imranasif87.github.io/ETC-API/api/v1/performance.json",
-            "https://imranasif87.github.io/ETC-API/api/v1/recording.json",
-            {
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "suppa": "https://etc.web.ox.ac.uk/api/v1#",
+        "etcrel": "https://etc.web.ox.ac.uk/vocabulary/relationship/#",
+        "prov": "http://www.w3.org/ns/prov#",
+        "created": {
+            "@id": "dcterms:created",
+            "@type": "xsd:dateTime"
+        },
+        "updated": {
+            "@id": "dcterms:modified",
+            "@type": "xsd:dateTime"
+        },
+        "etcIdentifier": {
+            "@id": "suppa:etcIdentifier"
+        },
+        "derivedFrom": {
+            "@id": "prov:wasDerivedFrom",
+            "@type": "@id"
+        },
+        "relatedTo": {
+            "@id": "dcterms:relation",
+            "@type": "@id"
+        },
+        "date": {
+            "@id": "dcterms:date"
+        },
+        "citation": {
+            "@id": "dcterms:bibliographicCitation"
+        },
+        "place": {
+            "@id": "suppa:place",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "suppa:format",
+            "@type": "@vocab"
+        },
+        "title": {
+            "@id": "dcterms:title"
+        },
+        "instrumentation": {
+            "@id": "suppa:instrumentation"
+        },
+        "key": {
+            "@id": "suppa:key"
+        },
+        "textSource": {
+            "@id": "suppa:textSource"
+        },
+        "workNotes": {
+            "@id": "rdfs:comment"
+        },
+        "parts": {
+            "@id": "suppa:parts",
+            "@type": "@id",
+            "@context": {
                 "items": {
-                    "@id": "suppa:hasEvent",
+                    "@id": "suppa:hasPart",
                     "@container": "@set"
                 }
             }
-        ]
-    },
-    "documents": {
-        "@id": "suppa:documents",
-        "@type": "@id",
-        "@context": [
-            "https://imranasif87.github.io/ETC-API/api/v1/correspondence.json",
-            "https://imranasif87.github.io/ETC-API/api/v1/postcard.json",
-            {
+        },
+        "themes": {
+            "@id": "suppa:themes",
+            "@type": "@id",
+            "@context": {
                 "items": {
-                    "@id": "suppa:hasDocument",
+                    "@id": "suppa:hasTheme",
                     "@container": "@set"
                 }
             }
-        ]
+        },
+        "dedicatees": {
+            "@id": "suppa:dedicatees",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasDedicatee",
+                    "@container": "@set"
+                }
+            }
+        },
+        "literature": {
+            "@id": "suppa:literature",
+            "@type": "@id",
+            "@context": {
+                "items": {
+                    "@id": "suppa:hasLiteratureReference",
+                    "@container": "@set"
+                }
+            }
+        },
+        "events": {
+            "@id": "suppa:events",
+            "@type": "@id",
+            "@context": [
+                "https://imranasif87.github.io/ETC-API/api/v1/performance.json",
+                "https://imranasif87.github.io/ETC-API/api/v1/recording.json",
+                {
+                    "items": {
+                        "@id": "suppa:hasEvent",
+                        "@container": "@set"
+                    }
+                }
+            ]
+        },
+        "documents": {
+            "@id": "suppa:documents",
+            "@type": "@id",
+            "@context": [
+                "https://imranasif87.github.io/ETC-API/api/v1/correspondence.json",
+                "https://imranasif87.github.io/ETC-API/api/v1/postcard.json",
+                {
+                    "items": {
+                        "@id": "suppa:hasDocument",
+                        "@container": "@set"
+                    }
+                }
+            ]
+        }
     }
 }
