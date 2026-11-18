@@ -32,7 +32,11 @@
       "@type": "@id"
     },
     "label": {
-      "@id": "rdfs:label"
+      "@id": "rdfs:label",
+      "@container": [
+        "@language",
+        "@set"
+      ]
     },
     "date": {
       "@id": "dcterms:date"
